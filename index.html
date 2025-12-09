@@ -197,18 +197,17 @@
         }
 
         function renderAll() {
-            // Profile Info & Image
+            // Profile & Image
             document.getElementById('hero-name').innerText = portfolioData.profile.name;
             document.getElementById('hero-role').innerText = currentLang === 'en' ? portfolioData.profile.role_en : portfolioData.profile.role_de;
             document.getElementById('hero-bio').innerText = portfolioData.i18n[currentLang].bio_summary;
             
-            // Image Logic
             const imgContainer = document.getElementById('profile-container');
             if(portfolioData.profile.img_src) {
                 imgContainer.innerHTML = `<img src="${portfolioData.profile.img_src}" alt="${portfolioData.profile.name}">`;
             }
 
-            // Static Text
+            // Text Translations
             document.getElementById('about-text').innerText = portfolioData.i18n[currentLang].about_long;
             document.querySelectorAll('[data-key]').forEach(el => {
                 const key = el.getAttribute('data-key');
@@ -246,7 +245,7 @@
                     </div>`;
             });
 
-            // Projects
+            // Projects (UPDATED FOR LINKS)
             const projContainer = document.getElementById('projects-grid');
             projContainer.innerHTML = '';
             portfolioData.projects.forEach(p => {
@@ -255,13 +254,25 @@
                     mediaContent = `<img src="${p.img_src}" alt="Project Image">`;
                 }
 
+                // Check if link exists
+                let linkHtml = '';
+                if (p.link && p.link.trim() !== "") {
+                    const linkText = currentLang === 'en' ? 'View Project' : 'Projekt ansehen';
+                    linkHtml = `<div style="margin-top:15px; border-top:1px solid #eee; padding-top:10px;">
+                                    <a href="${p.link}" target="_blank" style="font-size:0.85rem; font-weight:600; color:var(--secondary);">
+                                        ${linkText} <i class="fas fa-arrow-right" style="font-size:0.8rem; margin-left:5px;"></i>
+                                    </a>
+                                </div>`;
+                }
+
                 projContainer.innerHTML += `
-                    <div class="project-card">
+                    <div class="project-card" style="display:flex; flex-direction:column;">
                         <div class="project-media">${mediaContent}</div>
-                        <div class="project-content">
+                        <div class="project-content" style="flex:1; display:flex; flex-direction:column;">
                             <h3>${currentLang === 'en' ? p.title_en : p.title_de}</h3>
                             <div style="margin-bottom:10px">${p.tags.map(t => `<span class="tag-sm">${t}</span>`).join(' ')}</div>
-                            <p>${currentLang === 'en' ? p.desc_en : p.desc_de}</p>
+                            <p style="flex:1; margin-bottom:10px;">${currentLang === 'en' ? p.desc_en : p.desc_de}</p>
+                            ${linkHtml}
                         </div>
                     </div>`;
             });
