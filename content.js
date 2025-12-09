@@ -48,9 +48,9 @@ const portfolioData = {
             link: "" // Leave empty if no link yet
         },
         {
-            title_en: "Automated Quality Control",
+            title_en: "Optimization of Medical Device Manufacturing Technology",
             title_de: "Automatisierte Qualitätskontrolle",
-            desc_en: "Implemented complex metrology procedures using industrial 3D scanners.",
+            desc_en: "Designed a custom fixturing system for 5-axis CNC machining of orthodontic pliers.",
             desc_de: "Implementierung komplexer Messverfahren mittels industrieller 3D-Scanner.",
             tags: ["Metrology", "Robotics"],
             icon_class: "fas fa-robot",
