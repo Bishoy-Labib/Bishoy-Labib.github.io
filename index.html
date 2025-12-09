@@ -45,28 +45,49 @@
         .nav-links a:hover { color: var(--secondary); }
         .lang-switch { cursor: pointer; font-weight: 700; border: 1px solid var(--accent); padding: 5px 10px; border-radius: 4px; font-size: 0.8rem; }
 
-        /* HERO - UPDATED FOR PHOTO */
-        #home { padding-top: 120px; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; background: radial-gradient(circle at top right, #f1f5f9, transparent); padding-bottom: 80px;}
+        /* HERO SECTION - SIDE BY SIDE LAYOUT */
+        #home { 
+            padding-top: 100px; 
+            min-height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            background: radial-gradient(circle at top right, #f1f5f9, transparent); 
+            padding-bottom: 80px;
+        }
         
+        /* This container enables the side-by-side flex layout */
+        .hero-content {
+            display: flex;             
+            align-items: center;       
+            justify-content: center;   
+            gap: 60px;                 
+        }
+
         .profile-img-container {
-            width: 180px;
-            height: 180px;
-            margin: 0 auto 25px auto;
+            width: 280px;              
+            height: 280px;
             border-radius: 50%;
             overflow: hidden;
-            border: 4px solid var(--white);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border: 5px solid var(--white);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            flex-shrink: 0;            
         }
         .profile-img-container img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Ensures your photo doesn't look squashed */
+            object-fit: cover;
         }
 
-        .hero-content h1 { font-size: 3.5rem; color: var(--primary); margin-bottom: 10px; letter-spacing: -1px; }
+        .hero-text-wrapper {
+            max-width: 600px;
+            text-align: left; /* Text aligns left on desktop */
+        }
+
+        .hero-content h1 { font-size: 3.5rem; color: var(--primary); margin-bottom: 10px; letter-spacing: -1px; line-height: 1.1; }
         .hero-content h2 { font-size: 1.5rem; color: var(--accent); margin-bottom: 25px; font-weight: 400; }
-        .hero-content p { max-width: 600px; margin: 0 auto 35px; color: var(--text); }
-        .social-icons { margin-top: 30px; display: flex; gap: 20px; justify-content: center; }
+        .hero-content p { margin-bottom: 35px; color: var(--text); }
+        
+        .social-icons { margin-top: 30px; display: flex; gap: 20px; justify-content: flex-start; }
         .social-icons a { font-size: 1.5rem; color: var(--accent); }
         .social-icons a:hover { color: var(--secondary); transform: scale(1.1); }
 
@@ -85,18 +106,33 @@
 
         /* PROJECTS */
         .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .project-card { background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: var(--transition); border: 1px solid #e2e8f0; }
+        .project-card { background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: var(--transition); border: 1px solid #e2e8f0; display: flex; flex-direction: column; }
         .project-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
         .project-media { height: 180px; background-color: #cbd5e1; display: flex; align-items: center; justify-content: center; overflow: hidden; }
         .project-media img { width: 100%; height: 100%; object-fit: cover; }
         .project-media i { font-size: 3rem; color: var(--accent); }
-        .project-content { padding: 25px; }
+        .project-content { padding: 25px; flex: 1; display: flex; flex-direction: column; }
         .tag-sm { font-size: 0.75rem; background: #f1f5f9; padding: 4px 8px; border-radius: 4px; color: var(--primary); }
 
         footer { background: var(--primary); color: var(--white); padding: 30px 0; text-align: center; }
         
-        @media (max-width: 768px) {
+        /* MOBILE RESPONSIVENESS */
+        @media (max-width: 900px) {
+            .hero-content {
+                flex-direction: column; /* Stacks image on top of text */
+                text-align: center;     /* Centers text */
+                gap: 30px;
+            }
+            .hero-text-wrapper {
+                text-align: center;     
+            }
+            .profile-img-container {
+                width: 200px;           /* Smaller image on mobile */
+                height: 200px;
+            }
             .hero-content h1 { font-size: 2.5rem; }
+            .social-icons { justify-content: center; }
+            
             .about-grid { grid-template-columns: 1fr; }
             .nav-links { display: none; } 
         }
@@ -123,14 +159,16 @@
             <div class="profile-img-container" id="profile-container">
                 </div>
 
-            <h1 id="hero-name"></h1>
-            <h2 id="hero-role"></h2>
-            <p id="hero-bio"></p>
-            <div>
-                <a href="#projects" class="btn btn-primary" data-key="btn_projects">View Work</a>
-                <a href="#contact" class="btn btn-outline" data-key="btn_contact">Contact Me</a>
+            <div class="hero-text-wrapper">
+                <h1 id="hero-name"></h1>
+                <h2 id="hero-role"></h2>
+                <p id="hero-bio"></p>
+                <div>
+                    <a href="#projects" class="btn btn-primary" data-key="btn_projects">View Work</a>
+                    <a href="#contact" class="btn btn-outline" data-key="btn_contact">Contact Me</a>
+                </div>
+                <div class="social-icons" id="social-links"></div>
             </div>
-            <div class="social-icons" id="social-links"></div>
         </div>
     </section>
 
@@ -184,6 +222,7 @@
     </footer>
 
     <script src="content.js"></script>
+    
     <script>
         let currentLang = 'en';
 
@@ -245,7 +284,7 @@
                     </div>`;
             });
 
-            // Projects (UPDATED FOR LINKS)
+            // Projects with Link Logic
             const projContainer = document.getElementById('projects-grid');
             projContainer.innerHTML = '';
             portfolioData.projects.forEach(p => {
@@ -266,9 +305,9 @@
                 }
 
                 projContainer.innerHTML += `
-                    <div class="project-card" style="display:flex; flex-direction:column;">
+                    <div class="project-card">
                         <div class="project-media">${mediaContent}</div>
-                        <div class="project-content" style="flex:1; display:flex; flex-direction:column;">
+                        <div class="project-content">
                             <h3>${currentLang === 'en' ? p.title_en : p.title_de}</h3>
                             <div style="margin-bottom:10px">${p.tags.map(t => `<span class="tag-sm">${t}</span>`).join(' ')}</div>
                             <p style="flex:1; margin-bottom:10px;">${currentLang === 'en' ? p.desc_en : p.desc_de}</p>
