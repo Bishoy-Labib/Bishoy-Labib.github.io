@@ -1,13 +1,18 @@
 const portfolioData = {
-    // ... (Profile, Timeline, and Skills sections remain the same) ...
     profile: {
         name: "Bishoy Labib",
         img_src: "profile.jpg",
         role_en: "Mechanical Engineer & Data Scientist",
         role_de: "Maschinenbauingenieur & Data Scientist",
+        
+        // --- ADD THESE TWO LINES ---
+        cv_en: "pdf_cv/BishoyLabib_CV_EN.pdf",
+        cv_de: "pdf_cv/BishoyLabib_CV_DE.pdf",
+        // ---------------------------
+
         socials: [
             { icon: "fab fa-linkedin", url: "https://linkedin.com/in/bishoy-labib" },
-            { icon: "fab fa-github", url: "https://github.com/Bishoy-Labib" },
+            { icon: "fab fa-github", url: "https://github.com/" },
             { icon: "fas fa-envelope", url: "mailto:Labib.Bishoy@outlook.com" }
         ]
     },
