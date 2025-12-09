@@ -32,7 +32,7 @@ const portfolioData = {
         {
             title_en: "Study on Workpiece Deformation",
             title_de: "Mehrachsige additive Fertigung",
-            desc_en: "Developed a 5-axis 3D printing prototype with a customized slicer algorithm.",
+            desc_en: "Study deformation due to clamping based on experimental, analytical, and CAE approaches",
             desc_de: "Entwicklung eines 5-Achsen-3D-Druck-Prototyps.",
             tags: ["3D Printing", "Mechatronics"],
             icon_class: "fas fa-cube",
@@ -45,7 +45,7 @@ const portfolioData = {
             desc_de: "Untersuchung der Bearbeitungsoptimierung für kieferorthopädische Zangen.",
             tags: ["CNC", "ANSYS"],
             icon_class: "fas fa-tools",
-            link: "" // Leave empty if no link yet
+            link: "#"
         },
         {
             title_en: "Optimization of Medical Device Manufacturing Technology",
