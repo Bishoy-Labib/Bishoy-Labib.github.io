@@ -31,11 +31,34 @@
         .section { padding: 80px 0; }
         .section-title { font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 40px; text-align: center; }
         .section-title span { color: var(--secondary); }
+        
+        /* STANDARD BUTTONS */
         .btn { display: inline-block; padding: 12px 24px; border-radius: 6px; font-weight: 600; cursor: pointer; border: 2px solid transparent; }
         .btn-primary { background: var(--secondary); color: var(--white); }
         .btn-primary:hover { background: #2563eb; transform: translateY(-2px); }
         .btn-outline { border-color: var(--primary); color: var(--primary); }
         .btn-outline:hover { background: var(--primary); color: var(--white); transform: translateY(-2px); }
+
+        /* CV BUTTON (NEW STYLE) */
+        .btn-cv {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 20px;
+            border: 2px solid var(--primary); /* Line with same color */
+            color: var(--primary);            /* Text with same color */
+            border-radius: 50px;              /* Pill shape (Modern) */
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: var(--transition);
+            white-space: nowrap;
+        }
+        .btn-cv:hover {
+            background: var(--primary);
+            color: var(--white);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.15);
+        }
 
         /* NAV */
         nav { position: fixed; top: 0; width: 100%; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
@@ -45,7 +68,7 @@
         .nav-links a:hover { color: var(--secondary); }
         .lang-switch { cursor: pointer; font-weight: 700; border: 1px solid var(--accent); padding: 5px 10px; border-radius: 4px; font-size: 0.8rem; }
 
-        /* HERO SECTION - SIDE BY SIDE LAYOUT */
+        /* HERO SECTION */
         #home { 
             padding-top: 100px; 
             min-height: 100vh; 
@@ -55,7 +78,6 @@
             padding-bottom: 80px;
         }
         
-        /* This container enables the side-by-side flex layout */
         .hero-content {
             display: flex;             
             align-items: center;       
@@ -80,16 +102,23 @@
 
         .hero-text-wrapper {
             max-width: 600px;
-            text-align: left; /* Text aligns left on desktop */
+            text-align: left; 
         }
 
         .hero-content h1 { font-size: 3.5rem; color: var(--primary); margin-bottom: 10px; letter-spacing: -1px; line-height: 1.1; }
         .hero-content h2 { font-size: 1.5rem; color: var(--accent); margin-bottom: 25px; font-weight: 400; }
         .hero-content p { margin-bottom: 35px; color: var(--text); }
         
-        .social-icons { margin-top: 30px; display: flex; gap: 20px; justify-content: flex-start; }
-        .social-icons a { font-size: 1.5rem; color: var(--accent); }
-        .social-icons a:hover { color: var(--secondary); transform: scale(1.1); }
+        /* Updated Social Icons area to handle button alignment */
+        .social-icons { 
+            margin-top: 30px; 
+            display: flex; 
+            align-items: center; /* Vertically center button and icons */
+            gap: 20px; 
+            justify-content: flex-start; 
+        }
+        .social-icons a.icon-link { font-size: 1.5rem; color: var(--accent); }
+        .social-icons a.icon-link:hover { color: var(--secondary); transform: scale(1.1); }
 
         /* GRID LAYOUTS */
         #about { background: var(--bg-alt); }
@@ -119,19 +148,19 @@
         /* MOBILE RESPONSIVENESS */
         @media (max-width: 900px) {
             .hero-content {
-                flex-direction: column; /* Stacks image on top of text */
-                text-align: center;     /* Centers text */
+                flex-direction: column; 
+                text-align: center;     
                 gap: 30px;
             }
             .hero-text-wrapper {
                 text-align: center;     
             }
             .profile-img-container {
-                width: 200px;           /* Smaller image on mobile */
+                width: 200px;           
                 height: 200px;
             }
             .hero-content h1 { font-size: 2.5rem; }
-            .social-icons { justify-content: center; }
+            .social-icons { justify-content: center; flex-wrap: wrap; }
             
             .about-grid { grid-template-columns: 1fr; }
             .nav-links { display: none; } 
@@ -167,7 +196,8 @@
                     <a href="#projects" class="btn btn-primary" data-key="btn_projects">View Work</a>
                     <a href="#contact" class="btn btn-outline" data-key="btn_contact">Contact Me</a>
                 </div>
-                <div class="social-icons" id="social-links"></div>
+                <div class="social-icons" id="social-links">
+                    </div>
             </div>
         </div>
     </section>
@@ -221,7 +251,6 @@
         <p>&copy; 2025 Bishoy Labib. All Rights Reserved.</p>
     </footer>
 
-    
     <script src="content.js"></script>
     
     <script>
@@ -237,7 +266,7 @@
         }
 
         function renderAll() {
-            // 1. Profile & Image
+            // Profile & Image
             document.getElementById('hero-name').innerText = portfolioData.profile.name;
             document.getElementById('hero-role').innerText = currentLang === 'en' ? portfolioData.profile.role_en : portfolioData.profile.role_de;
             document.getElementById('hero-bio').innerText = portfolioData.i18n[currentLang].bio_summary;
@@ -247,35 +276,35 @@
                 imgContainer.innerHTML = `<img src="${portfolioData.profile.img_src}" alt="${portfolioData.profile.name}">`;
             }
 
-            // 2. Text Translations
+            // Text Translations
             document.getElementById('about-text').innerText = portfolioData.i18n[currentLang].about_long;
             document.querySelectorAll('[data-key]').forEach(el => {
                 const key = el.getAttribute('data-key');
                 if (portfolioData.i18n[currentLang][key]) el.innerText = portfolioData.i18n[currentLang][key];
             });
 
-            // 3. Socials & CV Download (UPDATED)
+            // --- SOCIALS & CV BUTTON LOGIC ---
             const socialContainer = document.getElementById('social-links');
             socialContainer.innerHTML = '';
             
-            // Add Social Icons
+            // 1. Social Icons (LinkedIn, GitHub, Email)
             portfolioData.profile.socials.forEach(s => {
-                socialContainer.innerHTML += `<a href="${s.url}" target="_blank"><i class="${s.icon}"></i></a>`;
+                socialContainer.innerHTML += `<a href="${s.url}" class="icon-link" target="_blank"><i class="${s.icon}"></i></a>`;
             });
 
-            // Add CV Download Icon
+            // 2. CV Download Button (Modern Style)
             const cvUrl = currentLang === 'en' ? portfolioData.profile.cv_en : portfolioData.profile.cv_de;
-            const cvTitle = currentLang === 'en' ? "Download CV" : "Lebenslauf herunterladen";
+            const cvText = currentLang === 'en' ? "Download CV" : "Lebenslauf";
             
             if (cvUrl) {
-                // Creates a PDF icon that downloads the file
                 socialContainer.innerHTML += `
-                    <a href="${cvUrl}" download title="${cvTitle}" style="color: var(--secondary);">
-                        <i class="fas fa-file-pdf"></i>
+                    <a href="${cvUrl}" download class="btn-cv">
+                        ${cvText} <i class="fas fa-download"></i>
                     </a>`;
             }
+            // ---------------------------------
 
-            // 4. Timeline
+            // Timeline
             const tlContainer = document.getElementById('education-timeline');
             tlContainer.innerHTML = '';
             portfolioData.timeline.forEach(item => {
@@ -288,7 +317,7 @@
                     </div>`;
             });
 
-            // 5. Skills
+            // Skills
             const skillsContainer = document.getElementById('skills-grid');
             skillsContainer.innerHTML = '';
             portfolioData.skills.forEach(s => {
@@ -299,7 +328,7 @@
                     </div>`;
             });
 
-            // 6. Projects
+            // Projects
             const projContainer = document.getElementById('projects-grid');
             projContainer.innerHTML = '';
             portfolioData.projects.forEach(p => {
