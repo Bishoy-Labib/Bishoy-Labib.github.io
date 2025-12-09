@@ -91,7 +91,7 @@ const portfolioData = {
             bio_summary: "Engineer with a multidisciplinary background in mechanical systems, metrology, and advanced manufacturing. Passionate about R&D, automation, and data-driven approaches to industrial innovation.",
             about_long: "I am a Mechanical and Metrology Engineer based in Linz, Austria, currently pursuing an MSc in Interdisciplinary Computing. My expertise bridges the gap between physical engineering (CAD, GD&T, Precision Metrology) and modern digital technologies (Machine Learning, Python, Data Engineering). I have hands-on experience in automotive quality control and medical device optimization.",
             nav_home: "Home", nav_about: "About", nav_skills: "Skills", nav_projects: "Projects", nav_contact: "Contact",
-            btn_projects: "View Work", btn_contact: "Contact Me",
+            btn_projects: "View Projects", btn_contact: "Contact Me",
             title_about: "About", title_skills: "Skills", title_projects: "Projects", title_contact: "Get In Touch",
             languages: "Languages",
             contact_sub: "I am currently open to new opportunities in Engineering and Data Science."
