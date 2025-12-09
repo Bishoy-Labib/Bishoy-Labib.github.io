@@ -1,14 +1,8 @@
-/* ----------------------------------------------------
-   YOUR DASHBOARD
-   Edit the data below to update your website.
-   ----------------------------------------------------
-*/
-
 const portfolioData = {
-    // 1. PERSONAL INFO & IMAGE
+    // ... (Profile, Timeline, and Skills sections remain the same) ...
     profile: {
         name: "Bishoy Labib",
-        img_src: "profile.jpg", // Ensure your file is named exactly this
+        img_src: "profile.jpg",
         role_en: "Mechanical Engineer & Data Scientist",
         role_de: "Maschinenbauingenieur & Data Scientist",
         socials: [
@@ -17,83 +11,76 @@ const portfolioData = {
             { icon: "fas fa-envelope", url: "mailto:Labib.Bishoy@outlook.com" }
         ]
     },
-
-    // 2. TIMELINE (Work & Education)
-    // Add new items at the top of the list to appear first
     timeline: [
-        {
-            date: "Oct 2025 - Current",
-            title: "MSc. Interdisciplinary Computing",
-            loc: "IT:U Austria",
-            desc_en: "Focus: Software Dev, Data Engineering, ML.",
-            desc_de: "Schwerpunkt: Softwareentwicklung, Data Engineering, ML."
-        },
-        {
-            date: "Sep 2024 - Sep 2025",
-            title: "Mechanical & Metrology Engineer",
-            loc: "ZALNER Engineering Kft.",
-            desc_en: "Tactile/Optical measurement systems, CMM programming, GD&T.",
-            desc_de: "Taktile/Optische Messsysteme, CMM-Programmierung, GD&T."
-        },
-        {
-            date: "Sep 2021 - May 2025",
-            title: "BSc. Mechanical Engineering",
-            loc: "Eötvös Loránd University",
-            desc_en: "Spec: Manufacturing Technology.",
-            desc_de: "Spezialisierung: Fertigungstechnik."
-        }
+        { date: "Oct 2025 - Current", title: "MSc. Interdisciplinary Computing", loc: "IT:U Austria", desc_en: "Focus: Software Dev, Data Engineering, ML.", desc_de: "Schwerpunkt: Softwareentwicklung, Data Engineering, ML." },
+        { date: "Sep 2024 - Sep 2025", title: "Mechanical & Metrology Engineer", loc: "ZALNER Engineering Kft.", desc_en: "Tactile/Optical measurement systems, CMM programming, GD&T.", desc_de: "Taktile/Optische Messsysteme, CMM-Programmierung, GD&T." },
+        { date: "Sep 2021 - May 2025", title: "BSc. Mechanical Engineering", loc: "Eötvös Loránd University", desc_en: "Spec: Manufacturing Technology.", desc_de: "Spezialisierung: Fertigungstechnik." }
     ],
-
-    // 3. SKILLS
     skills: [
-        {
-            category_en: "Programming & Data",
-            category_de: "Programmierung & Daten",
-            tags: ["Python", "TensorFlow/PyTorch", "SQL", "MATLAB", "Data Engineering", "C/C++", "Git"]
-        },
-        {
-            category_en: "Mechanical & Metrology",
-            category_de: "Mechanik & Messtechnik",
-            tags: ["CAD/CAM (CREO, Fusion)", "ANSYS (FEM)", "GD&T", "CMM Programming", "ZEISS Inspect", "3D Scanning", "PolyWorks"]
-        },
-        {
-            category_en: "Automation",
-            category_de: "Automatisierung",
-            tags: ["Arduino/Microcontrollers", "PLC", "Control Systems", "Robotics", "Pneumatics"]
-        }
+        { category_en: "Programming & Data", category_de: "Programmierung & Daten", tags: ["Python", "TensorFlow/PyTorch", "SQL", "MATLAB", "Data Engineering", "C/C++", "Git"] },
+        { category_en: "Mechanical & Metrology", category_de: "Mechanik & Messtechnik", tags: ["CAD/CAM (CREO, Fusion)", "ANSYS (FEM)", "GD&T", "CMM Programming", "ZEISS Inspect", "3D Scanning", "PolyWorks"] },
+        { category_en: "Automation", category_de: "Automatisierung", tags: ["Arduino/Microcontrollers", "PLC", "Control Systems", "Robotics", "Pneumatics"] }
     ],
 
-    // 4. PROJECTS
-    // To add a photo, change img_placeholder to img_src: "filename.jpg"
+    // --- UPDATED PROJECTS SECTION (Supports links & unlimited items) ---
     projects: [
         {
             title_en: "Multi-Axis Additive Manufacturing",
             title_de: "Mehrachsige additive Fertigung",
-            desc_en: "Developed a 5-axis 3D printing prototype with a customized slicer algorithm and synchronized motion control systems.",
-            desc_de: "Entwicklung eines 5-Achsen-3D-Druck-Prototyps mit individuellem Slicer-Algorithmus.",
-            tags: ["3D Printing", "Mechatronics", "Algorithm"],
-            icon_class: "fas fa-cube", // FontAwesome Icon
-            // img_src: "project1.jpg" // Uncomment this line if you have a photo
+            desc_en: "Developed a 5-axis 3D printing prototype with a customized slicer algorithm.",
+            desc_de: "Entwicklung eines 5-Achsen-3D-Druck-Prototyps.",
+            tags: ["3D Printing", "Mechatronics"],
+            icon_class: "fas fa-cube",
+            link: "https://github.com/yourusername/project1" // <--- ADD LINK HERE
         },
         {
             title_en: "Medical Device Optimization",
             title_de: "Optimierung medizinischer Geräte",
-            desc_en: "Investigated machining optimization for orthodontic pliers. Designed custom fixturing for 5-axis CNC and validated via CMM.",
+            desc_en: "Designed custom fixturing for 5-axis CNC and validated via CMM.",
             desc_de: "Untersuchung der Bearbeitungsoptimierung für kieferorthopädische Zangen.",
-            tags: ["CNC", "ANSYS", "Medical Tech"],
+            tags: ["CNC", "ANSYS"],
             icon_class: "fas fa-tools",
+            link: "" // Leave empty if no link yet
         },
         {
             title_en: "Automated Quality Control",
             title_de: "Automatisierte Qualitätskontrolle",
-            desc_en: "Implemented complex metrology procedures using industrial 3D scanners and robotic arms for automotive clients.",
+            desc_en: "Implemented complex metrology procedures using industrial 3D scanners.",
             desc_de: "Implementierung komplexer Messverfahren mittels industrieller 3D-Scanner.",
-            tags: ["Metrology", "Robotics", "Quality Assurance"],
+            tags: ["Metrology", "Robotics"],
             icon_class: "fas fa-robot",
+            link: "https://github.com/yourusername/project3"
+        },
+        // --- ADD MORE PROJECTS BELOW ---
+        {
+            title_en: "Project 4 Title",
+            title_de: "Projekt 4 Titel",
+            desc_en: "Description of your fourth project.",
+            desc_de: "Beschreibung des vierten Projekts.",
+            tags: ["Python", "AI"],
+            icon_class: "fas fa-code",
+            link: "#"
+        },
+        {
+            title_en: "Project 5 Title",
+            title_de: "Projekt 5 Titel",
+            desc_en: "Description of your fifth project.",
+            desc_de: "Beschreibung des fünften Projekts.",
+            tags: ["Data Science"],
+            icon_class: "fas fa-database",
+            link: "#"
+        },
+        {
+            title_en: "Project 6 Title",
+            title_de: "Projekt 6 Titel",
+            desc_en: "Description of your sixth project.",
+            desc_de: "Beschreibung des sechsten Projekts.",
+            tags: ["Engineering"],
+            icon_class: "fas fa-cogs",
+            link: "#"
         }
     ],
 
-    // 5. TRANSLATIONS (Static Text)
     i18n: {
         en: {
             bio_summary: "Engineer with a multidisciplinary background in mechanical systems, metrology, and advanced manufacturing. Passionate about R&D, automation, and data-driven approaches to industrial innovation.",
