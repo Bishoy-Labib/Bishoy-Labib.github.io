@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Bishoy Labib - Mechanical Engineer & Data Scientist">
+    <title>Bishoy Labib | Engineering Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* --- CSS VARIABLES & RESET --- */
+        :root {
+            --primary: #0f172a; /* Slate 900 */
+            --secondary: #3b82f6; /* Blue 500 */
+            --accent: #64748b; /* Slate 500 */
+            --bg: #ffffff;
+            --bg-alt: #f8fafc;
+            --text: #334155;
+            --white: #ffffff;
+            --transition: all 0.3s ease;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; color: var(--text); line-height: 1.6; background: var(--bg); }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        ul { list-style: none; }
+
+        /* --- LAYOUT UTILITIES --- */
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        .section { padding: 80px 0; }
+        .section-title { font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 40px; text-align: center; }
+        .section-title span { color: var(--secondary); }
+        .btn { display: inline-block; padding: 12px 24px; border-radius: 6px; font-weight: 600; cursor: pointer; border: 2px solid transparent; }
+        .btn-primary { background: var(--secondary); color: var(--white); }
+        .btn-primary:hover { background: #2563eb; transform: translateY(-2px); }
+        .btn-outline { border-color: var(--primary); color: var(--primary); }
+        .btn-outline:hover { background: var(--primary); color: var(--white); transform: translateY(-2px); }
+
+        /* --- NAVIGATION --- */
+        nav { position: fixed; top: 0; width: 100%; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; height: 70px; }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
+        .nav-links { display: flex; gap: 30px; }
+        .nav-links a { font-weight: 500; font-size: 0.95rem; color: var(--primary); }
+        .nav-links a:hover, .nav-links a.active { color: var(--secondary); }
+        .lang-switch { cursor: pointer; font-weight: 700; border: 1px solid var(--accent); padding: 5px 10px; border-radius: 4px; font-size: 0.8rem; }
+
+        /* --- HERO SECTION --- */
+        #home { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; background: radial-gradient(circle at top right, #f1f5f9, transparent); }
+        .hero-content h1 { font-size: 3.5rem; color: var(--primary); margin-bottom: 15px; letter-spacing: -1px; }
+        .hero-content h2 { font-size: 1.5rem; color: var(--accent); margin-bottom: 25px; font-weight: 400; }
+        .hero-content p { max-width: 600px; margin: 0 auto 35px; color: var(--text); }
+        .social-icons { margin-top: 30px; display: flex; gap: 20px; justify-content: center; }
+        .social-icons a { font-size: 1.5rem; color: var(--accent); }
+        .social-icons a:hover { color: var(--secondary); transform: scale(1.1); }
+
+        /* --- ABOUT SECTION --- */
+        #about { background: var(--bg-alt); }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; }
+        .timeline-item { border-left: 2px solid var(--secondary); padding-left: 20px; margin-bottom: 30px; position: relative; }
+        .timeline-item::before { content: ''; position: absolute; left: -6px; top: 0; width: 10px; height: 10px; background: var(--secondary); border-radius: 50%; }
+        .timeline-date { font-size: 0.85rem; color: var(--accent); font-weight: 600; margin-bottom: 5px; }
+        .timeline-title { font-weight: 700; color: var(--primary); }
+        .timeline-loc { font-size: 0.9rem; font-style: italic; }
+
+        /* --- SKILLS SECTION --- */
+        .skills-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .skill-category h3 { margin-bottom: 15px; color: var(--primary); border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+        .skill-tags { display: flex; flex-wrap: wrap; gap: 10px; }
+        .skill-tag { background: #e0f2fe; color: #0369a1; padding: 6px 12px; border-radius: 20px; font-size: 0.9rem; font-weight: 500; }
+        
+        /* --- PROJECTS SECTION --- */
+        #projects { background: var(--bg-alt); }
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .project-card { background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: var(--transition); border: 1px solid #e2e8f0; }
+        .project-card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+        .project-img { height: 180px; background-color: #cbd5e1; display: flex; align-items: center; justify-content: center; color: var(--accent); font-size: 3rem; }
+        .project-img img { width: 100%; height: 100%; object-fit: cover; }
+        .project-content { padding: 25px; }
+        .project-content h3 { color: var(--primary); margin-bottom: 10px; }
+        .project-content p { font-size: 0.9rem; color: var(--accent); margin-bottom: 15px; }
+        .project-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+        .tag-sm { font-size: 0.75rem; background: #f1f5f9; padding: 4px 8px; border-radius: 4px; color: var(--primary); }
+
+        /* --- CONTACT SECTION --- */
+        .contact-content { text-align: center; max-width: 600px; margin: 0 auto; }
+        .contact-item { margin-top: 20px; font-size: 1.1rem; }
+        .contact-item i { color: var(--secondary); margin-right: 10px; }
+
+        /* --- FOOTER --- */
+        footer { background: var(--primary); color: var(--white); padding: 30px 0; text-align: center; font-size: 0.9rem; }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.5rem; }
+            .about-grid { grid-template-columns: 1fr; }
+            .nav-links { display: none; } /* Mobile Menu omitted for brevity, keeping it clean */
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">Bishoy.</div>
+            <div class="nav-links">
+                <a href="#home" data-key="nav_home">Home</a>
+                <a href="#about" data-key="nav_about">About</a>
+                <a href="#skills" data-key="nav_skills">Skills</a>
+                <a href="#projects" data-key="nav_projects">Projects</a>
+                <a href="#contact" data-key="nav_contact">Contact</a>
+                <button class="lang-switch" onclick="toggleLanguage()">DE | EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="container hero-content">
+            <h1 id="hero-name">Bishoy Labib</h1>
+            <h2 id="hero-role">Mechanical & Metrology Engineer</h2>
+            <p id="hero-bio">
+                </p>
+            <div>
+                <a href="#projects" class="btn btn-primary" data-key="btn_projects">View Work</a>
+                <a href="#contact" class="btn btn-outline" data-key="btn_contact">Contact Me</a>
+            </div>
+            <div class="social-icons" id="social-links">
+                </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title"><span data-key="title_about">About</span> Me</h2>
+            <div class="about-grid">
+                <div>
+                    <p id="about-text" style="margin-bottom: 20px;">
+                        </p>
+                    <div style="margin-top: 20px;">
+                        <strong data-key="languages">Languages:</strong>
+                        <ul style="margin-top: 10px;">
+                            <li>🇬🇧 English (C1)</li>
+                            <li>🇩🇪 German (A2.1)</li>
+                            <li>🇭🇺 Hungarian (A2)</li>
+                            <li>🇪🇬 Arabic (Native)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="education-timeline">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical <span data-key="title_skills">Skills</span></h2>
+            <div class="skills-container" id="skills-grid">
+                </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Selected <span data-key="title_projects">Projects</span></h2>
+            <div class="projects-grid" id="projects-grid">
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container contact-content">
+            <h2 class="section-title" data-key="title_contact">Get In Touch</h2>
+            <p data-key="contact_sub">I am currently open to new opportunities in Engineering and Data Science.</p>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i> <a href="mailto:Labib.Bishoy@outlook.com">Labib.Bishoy@outlook.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i> +43 676 6610960
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i> Linz, Austria
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Bishoy Labib. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        /*******************************************************
+         * THE DASHBOARD (EDIT YOUR DATA HERE)
+         *******************************************************/
+        const portfolioData = {
+            profile: {
+                name: "Bishoy Labib",
+                role_en: "Mechanical Engineer & Data Scientist",
+                role_de: "Maschinenbauingenieur & Data Scientist",
+                socials: [
+                    { icon: "fab fa-linkedin", url: "https://linkedin.com/in/bishoy-labib" },
+                    { icon: "fab fa-github", url: "https://github.com/" }, // Add your actual GitHub if available
+                    { icon: "fas fa-envelope", url: "mailto:Labib.Bishoy@outlook.com" }
+                ]
+            },
+            // Translations for static text
+            i18n: {
+                en: {
+                    bio_summary: "Engineer with a multidisciplinary background in mechanical systems, metrology, and advanced manufacturing. Passionate about R&D, automation, and data-driven approaches to industrial innovation.",
+                    about_long: "I am a Mechanical and Metrology Engineer based in Linz, Austria, currently pursuing an MSc in Interdisciplinary Computing. My expertise bridges the gap between physical engineering (CAD, GD&T, Precision Metrology) and modern digital technologies (Machine Learning, Python, Data Engineering). I have hands-on experience in automotive quality control and medical device optimization.",
+                    nav_home: "Home", nav_about: "About", nav_skills: "Skills", nav_projects: "Projects", nav_contact: "Contact",
+                    btn_projects: "View Work", btn_contact: "Contact Me",
+                    title_about: "About", title_skills: "Skills", title_projects: "Projects", title_contact: "Get In Touch",
+                    languages: "Languages",
+                    contact_sub: "I am currently open to new opportunities in Engineering and Data Science."
+                },
+                de: {
+                    bio_summary: "Ingenieur mit multidisziplinärem Hintergrund in mechanischen Systemen, Messtechnik und fortschrittlicher Fertigung. Leidenschaft für F&E, Automatisierung und datengesteuerte Ansätze.",
+                    about_long: "Ich bin Maschinenbau- und Messtechnikingenieur mit Sitz in Linz, Österreich, und absolviere derzeit einen MSc in Interdisciplinary Computing. Meine Expertise schließt die Lücke zwischen physikalischer Technik (CAD, GD&T, Präzisionsmesstechnik) und modernen digitalen Technologien (Machine Learning, Python, Data Engineering).",
+                    nav_home: "Start", nav_about: "Über mich", nav_skills: "Fähigkeiten", nav_projects: "Projekte", nav_contact: "Kontakt",
+                    btn_projects: "Arbeit ansehen", btn_contact: "Kontaktieren",
+                    title_about: "Über", title_skills: "Fähigkeiten", title_projects: "Projekte", title_contact: "Kontakt",
+                    languages: "Sprachen",
+                    contact_sub: "Ich bin derzeit offen für neue Möglichkeiten im Bereich Ingenieurwesen und Data Science."
+                }
+            },
+            // Timeline Data (Education & Work)
+            timeline: [
+                {
+                    date: "Oct 2025 - Current",
+                    title: "MSc. Interdisciplinary Computing",
+                    loc: "IT:U Austria",
+                    desc_en: "Focus: Software Dev, Data Engineering, ML.",
+                    desc_de: "Schwerpunkt: Softwareentwicklung, Data Engineering, ML."
+                },
+                {
+                    date: "Sep 2024 - Sep 2025",
+                    title: "Mechanical & Metrology Engineer",
+                    loc: "ZALNER Engineering Kft.",
+                    desc_en: "Tactile/Optical measurement systems, CMM programming, GD&T.",
+                    desc_de: "Taktile/Optische Messsysteme, CMM-Programmierung, GD&T."
+                },
+                {
+                    date: "Sep 2021 - May 2025",
+                    title: "BSc. Mechanical Engineering",
+                    loc: "Eötvös Loránd University",
+                    desc_en: "Spec: Manufacturing Technology.",
+                    desc_de: "Spezialisierung: Fertigungstechnik."
+                }
+            ],
+            // Skills Data
+            skills: [
+                {
+                    category_en: "Programming & Data",
+                    category_de: "Programmierung & Daten",
+                    tags: ["Python", "TensorFlow/PyTorch", "SQL", "MATLAB", "Data Engineering", "C/C++", "Git"]
+                },
+                {
+                    category_en: "Mechanical & Metrology",
+                    category_de: "Mechanik & Messtechnik",
+                    tags: ["CAD/CAM (CREO, Fusion)", "ANSYS (FEM)", "GD&T", "CMM Programming", "ZEISS Inspect", "3D Scanning", "PolyWorks"]
+                },
+                {
+                    category_en: "Automation",
+                    category_de: "Automatisierung",
+                    tags: ["Arduino/Microcontrollers", "PLC", "Control Systems", "Robotics", "Pneumatics"]
+                }
+            ],
+            // Projects Data
+            projects: [
+                {
+                    title_en: "Multi-Axis Additive Manufacturing",
+                    title_de: "Mehrachsige additive Fertigung",
+                    desc_en: "Developed a 5-axis 3D printing prototype with a customized slicer algorithm and synchronized motion control systems.",
+                    desc_de: "Entwicklung eines 5-Achsen-3D-Druck-Prototyps mit individuellem Slicer-Algorithmus.",
+                    tags: ["3D Printing", "Mechatronics", "Algorithm"],
+                    img_placeholder: "fas fa-cube" // FontAwesome icon class as placeholder
+                },
+                {
+                    title_en: "Medical Device Optimization",
+                    title_de: "Optimierung medizinischer Geräte",
+                    desc_en: "Investigated machining optimization for orthodontic pliers. Designed custom fixturing for 5-axis CNC and validated via CMM.",
+                    desc_de: "Untersuchung der Bearbeitungsoptimierung für kieferorthopädische Zangen.",
+                    tags: ["CNC", "ANSYS", "Medical Tech"],
+                    img_placeholder: "fas fa-tools"
+                },
+                {
+                    title_en: "Automated Quality Control",
+                    title_de: "Automatisierte Qualitätskontrolle",
+                    desc_en: "Implemented complex metrology procedures using industrial 3D scanners and robotic arms for automotive clients.",
+                    desc_de: "Implementierung komplexer Messverfahren mittels industrieller 3D-Scanner.",
+                    tags: ["Metrology", "Robotics", "Quality Assurance"],
+                    img_placeholder: "fas fa-robot"
+                }
+            ]
+        };
+
+        /*******************************************************
+         * LOGIC (DO NOT EDIT BELOW UNLESS ADVANCED)
+         *******************************************************/
+        
+        let currentLang = 'en';
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            renderContent();
+            renderSkills();
+            renderProjects();
+            renderTimeline();
+        });
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'de' : 'en';
+            renderContent();
+            renderSkills();
+            renderProjects();
+            renderTimeline();
+        }
+
+        function renderContent() {
+            // Text Replacements
+            document.querySelectorAll('[data-key]').forEach(el => {
+                const key = el.getAttribute('data-key');
+                if (portfolioData.i18n[currentLang][key]) {
+                    el.innerText = portfolioData.i18n[currentLang][key];
+                }
+            });
+
+            // Specific Elements
+            document.getElementById('hero-role').innerText = currentLang === 'en' ? portfolioData.profile.role_en : portfolioData.profile.role_de;
+            document.getElementById('hero-bio').innerText = portfolioData.i18n[currentLang].bio_summary;
+            document.getElementById('about-text').innerText = portfolioData.i18n[currentLang].about_long;
+
+            // Socials (only render once)
+            const socialContainer = document.getElementById('social-links');
+            if (socialContainer.innerHTML.trim() === '') {
+                portfolioData.profile.socials.forEach(s => {
+                    const a = document.createElement('a');
+                    a.href = s.url;
+                    a.target = "_blank";
+                    a.innerHTML = `<i class="${s.icon}"></i>`;
+                    socialContainer.appendChild(a);
+                });
+            }
+        }
+
+        function renderTimeline() {
+            const container = document.getElementById('education-timeline');
+            container.innerHTML = '';
+            portfolioData.timeline.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'timeline-item';
+                div.innerHTML = `
+                    <div class="timeline-date">${item.date}</div>
+                    <div class="timeline-title">${item.title}</div>
+                    <div class="timeline-loc">${item.loc}</div>
+                    <div style="font-size: 0.9rem; margin-top: 5px;">${currentLang === 'en' ? item.desc_en : item.desc_de}</div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function renderSkills() {
+            const container = document.getElementById('skills-grid');
+            container.innerHTML = '';
+            portfolioData.skills.forEach(skillSet => {
+                const div = document.createElement('div');
+                div.className = 'skill-category';
+                div.innerHTML = `
+                    <h3>${currentLang === 'en' ? skillSet.category_en : skillSet.category_de}</h3>
+                    <div class="skill-tags">
+                        ${skillSet.tags.map(tag => `<span class="skill-tag">${tag}</span>`).join('')}
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function renderProjects() {
+            const container = document.getElementById('projects-grid');
+            container.innerHTML = '';
+            portfolioData.projects.forEach(p => {
+                const card = document.createElement('div');
+                card.className = 'project-card';
+                card.innerHTML = `
+                    <div class="project-img">
+                        <i class="${p.img_placeholder}"></i>
+                        </div>
+                    <div class="project-content">
+                        <h3>${currentLang === 'en' ? p.title_en : p.title_de}</h3>
+                        <div class="project-tags">
+                            ${p.tags.map(t => `<span class="tag-sm">${t}</span>`).join('')}
+                        </div>
+                        <p>${currentLang === 'en' ? p.desc_en : p.desc_de}</p>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+    </script>
+</body>
+</html>
