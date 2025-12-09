@@ -30,7 +30,7 @@ const portfolioData = {
     // --- UPDATED PROJECTS SECTION (Supports links & unlimited items) ---
     projects: [
         {
-            title_en: "Multi-Axis Additive Manufacturing",
+            title_en: "Study on Workpiece Deformation",
             title_de: "Mehrachsige additive Fertigung",
             desc_en: "Developed a 5-axis 3D printing prototype with a customized slicer algorithm.",
             desc_de: "Entwicklung eines 5-Achsen-3D-Druck-Prototyps.",
@@ -39,7 +39,7 @@ const portfolioData = {
             link: "https://github.com/yourusername/project1" // <--- ADD LINK HERE
         },
         {
-            title_en: "Medical Device Optimization",
+            title_en: "Explicit Dynamics Simulation: Deepdrawing",
             title_de: "Optimierung medizinischer Geräte",
             desc_en: "Designed custom fixturing for 5-axis CNC and validated via CMM.",
             desc_de: "Untersuchung der Bearbeitungsoptimierung für kieferorthopädische Zangen.",
@@ -58,7 +58,7 @@ const portfolioData = {
         },
         // --- ADD MORE PROJECTS BELOW ---
         {
-            title_en: "Project 4 Title",
+            title_en: "Ansys Projects",
             title_de: "Projekt 4 Titel",
             desc_en: "Description of your fourth project.",
             desc_de: "Beschreibung des vierten Projekts.",
