@@ -221,6 +221,7 @@
         <p>&copy; 2025 Bishoy Labib. All Rights Reserved.</p>
     </footer>
 
+    
     <script src="content.js"></script>
     
     <script>
@@ -236,7 +237,7 @@
         }
 
         function renderAll() {
-            // Profile & Image
+            // 1. Profile & Image
             document.getElementById('hero-name').innerText = portfolioData.profile.name;
             document.getElementById('hero-role').innerText = currentLang === 'en' ? portfolioData.profile.role_en : portfolioData.profile.role_de;
             document.getElementById('hero-bio').innerText = portfolioData.i18n[currentLang].bio_summary;
@@ -246,21 +247,35 @@
                 imgContainer.innerHTML = `<img src="${portfolioData.profile.img_src}" alt="${portfolioData.profile.name}">`;
             }
 
-            // Text Translations
+            // 2. Text Translations
             document.getElementById('about-text').innerText = portfolioData.i18n[currentLang].about_long;
             document.querySelectorAll('[data-key]').forEach(el => {
                 const key = el.getAttribute('data-key');
                 if (portfolioData.i18n[currentLang][key]) el.innerText = portfolioData.i18n[currentLang][key];
             });
 
-            // Socials
+            // 3. Socials & CV Download (UPDATED)
             const socialContainer = document.getElementById('social-links');
             socialContainer.innerHTML = '';
+            
+            // Add Social Icons
             portfolioData.profile.socials.forEach(s => {
                 socialContainer.innerHTML += `<a href="${s.url}" target="_blank"><i class="${s.icon}"></i></a>`;
             });
 
-            // Timeline
+            // Add CV Download Icon
+            const cvUrl = currentLang === 'en' ? portfolioData.profile.cv_en : portfolioData.profile.cv_de;
+            const cvTitle = currentLang === 'en' ? "Download CV" : "Lebenslauf herunterladen";
+            
+            if (cvUrl) {
+                // Creates a PDF icon that downloads the file
+                socialContainer.innerHTML += `
+                    <a href="${cvUrl}" download title="${cvTitle}" style="color: var(--secondary);">
+                        <i class="fas fa-file-pdf"></i>
+                    </a>`;
+            }
+
+            // 4. Timeline
             const tlContainer = document.getElementById('education-timeline');
             tlContainer.innerHTML = '';
             portfolioData.timeline.forEach(item => {
@@ -273,7 +288,7 @@
                     </div>`;
             });
 
-            // Skills
+            // 5. Skills
             const skillsContainer = document.getElementById('skills-grid');
             skillsContainer.innerHTML = '';
             portfolioData.skills.forEach(s => {
@@ -284,7 +299,7 @@
                     </div>`;
             });
 
-            // Projects with Link Logic
+            // 6. Projects
             const projContainer = document.getElementById('projects-grid');
             projContainer.innerHTML = '';
             portfolioData.projects.forEach(p => {
