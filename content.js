@@ -7,14 +7,14 @@ const portfolioData = {
         role_de: "Maschinenbauingenieur & Data Scientist",
         socials: [
             { icon: "fab fa-linkedin", url: "https://linkedin.com/in/bishoy-labib" },
-            { icon: "fab fa-github", url: "https://github.com/" },
+            { icon: "fab fa-github", url: "https://github.com/Bishoy-Labib" },
             { icon: "fas fa-envelope", url: "mailto:Labib.Bishoy@outlook.com" }
         ]
     },
     timeline: [
         { date: "Oct 2025 - Current", title: "MSc. Interdisciplinary Computing", loc: "IT:U Austria", desc_en: "Focus: Software Dev, Data Engineering, ML.", desc_de: "Schwerpunkt: Softwareentwicklung, Data Engineering, ML." },
         { date: "Sep 2024 - Sep 2025", title: "Mechanical & Metrology Engineer", loc: "ZALNER Engineering Kft.", desc_en: "Tactile/Optical measurement systems, CMM programming, GD&T.", desc_de: "Taktile/Optische Messsysteme, CMM-Programmierung, GD&T." },
-        { date: "Sep 2021 - May 2025", title: "BSc. Mechanical Engineering", loc: "Eötvös Loránd University", desc_en: "Spec: Manufacturing Technology.", desc_de: "Spezialisierung: Fertigungstechnik." }
+        { date: "Sep 2021 - Jan 2025", title: "BSc. Mechanical Engineering", loc: "Eötvös Loránd University", desc_en: "Spec: Manufacturing Technology.", desc_de: "Spezialisierung: Fertigungstechnik." }
     ],
     skills: [
         { category_en: "Programming & Data", category_de: "Programmierung & Daten", tags: ["Python", "TensorFlow/PyTorch", "SQL", "MATLAB", "Data Engineering", "C/C++", "Git"] },
