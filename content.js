@@ -36,7 +36,7 @@ const portfolioData = {
             desc_de: "Entwicklung eines 5-Achsen-3D-Druck-Prototyps.",
             tags: ["3D Printing", "Mechatronics"],
             icon_class: "fas fa-cube",
-            link: "https://github.com/yourusername/project1" // <--- ADD LINK HERE
+            link: "https://github.com/Bishoy-Labib/StudyWorkpieceDeformation.git" // <--- ADD LINK HERE
         },
         {
             title_en: "Explicit Dynamics Simulation: Deepdrawing",
@@ -45,7 +45,7 @@ const portfolioData = {
             desc_de: "Untersuchung der Bearbeitungsoptimierung für kieferorthopädische Zangen.",
             tags: ["CNC", "ANSYS"],
             icon_class: "fas fa-tools",
-            link: "#"
+            link: "https://github.com/Bishoy-Labib/Deep-Drawing-with-ANSYS.git"
         },
         {
             title_en: "Optimization of Medical Device Manufacturing Technology",
@@ -54,35 +54,7 @@ const portfolioData = {
             desc_de: "Implementierung komplexer Messverfahren mittels industrieller 3D-Scanner.",
             tags: ["Metrology", "Robotics"],
             icon_class: "fas fa-robot",
-            link: "https://github.com/yourusername/project3"
-        },
-        // --- ADD MORE PROJECTS BELOW ---
-        {
-            title_en: "Ansys Projects",
-            title_de: "Projekt 4 Titel",
-            desc_en: "Description of your fourth project.",
-            desc_de: "Beschreibung des vierten Projekts.",
-            tags: ["Python", "AI"],
-            icon_class: "fas fa-code",
-            link: "#"
-        },
-        {
-            title_en: "Project 5 Title",
-            title_de: "Projekt 5 Titel",
-            desc_en: "Description of your fifth project.",
-            desc_de: "Beschreibung des fünften Projekts.",
-            tags: ["Data Science"],
-            icon_class: "fas fa-database",
-            link: "#"
-        },
-        {
-            title_en: "Project 6 Title",
-            title_de: "Projekt 6 Titel",
-            desc_en: "Description of your sixth project.",
-            desc_de: "Beschreibung des sechsten Projekts.",
-            tags: ["Engineering"],
-            icon_class: "fas fa-cogs",
-            link: "#"
+            link: "https://github.com/Bishoy-Labib/MedicalPliersFixturing.git"
         }
     ],
 
