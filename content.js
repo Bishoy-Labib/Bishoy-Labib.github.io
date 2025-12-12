@@ -53,7 +53,7 @@ const portfolioData = {
             desc_en: "Experiment with deep drawing process. Analysing stresses and recreating of different failures",
             desc_de: "Untersuchung der Bearbeitungsoptimierung für kieferorthopädische Zangen.",
             tags: ["NonLinear FEM", "ANSYS"],
-            icon_class: "fas fa-tools",
+            icon_class: "PlasticStrain.png",
             link: "https://github.com/Bishoy-Labib/Deep-Drawing-with-ANSYS.git"
         },
         {
