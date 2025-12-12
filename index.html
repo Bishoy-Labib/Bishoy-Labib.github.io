@@ -266,7 +266,7 @@
         }
 
         function renderAll() {
-            // Profile & Image
+            // --- 1. PROFILE & BIO ---
             document.getElementById('hero-name').innerText = portfolioData.profile.name;
             document.getElementById('hero-role').innerText = currentLang === 'en' ? portfolioData.profile.role_en : portfolioData.profile.role_de;
             document.getElementById('hero-bio').innerText = portfolioData.i18n[currentLang].bio_summary;
@@ -276,23 +276,21 @@
                 imgContainer.innerHTML = `<img src="${portfolioData.profile.img_src}" alt="${portfolioData.profile.name}">`;
             }
 
-            // Text Translations
+            // --- 2. TEXT TRANSLATIONS ---
             document.getElementById('about-text').innerText = portfolioData.i18n[currentLang].about_long;
             document.querySelectorAll('[data-key]').forEach(el => {
                 const key = el.getAttribute('data-key');
                 if (portfolioData.i18n[currentLang][key]) el.innerText = portfolioData.i18n[currentLang][key];
             });
 
-            // --- SOCIALS & CV BUTTON LOGIC ---
+            // --- 3. SOCIALS & CV ---
             const socialContainer = document.getElementById('social-links');
             socialContainer.innerHTML = '';
             
-            // 1. Social Icons (LinkedIn, GitHub, Email)
             portfolioData.profile.socials.forEach(s => {
                 socialContainer.innerHTML += `<a href="${s.url}" class="icon-link" target="_blank"><i class="${s.icon}"></i></a>`;
             });
 
-            // 2. CV Download Button (Modern Style)
             const cvUrl = currentLang === 'en' ? portfolioData.profile.cv_en : portfolioData.profile.cv_de;
             const cvText = currentLang === 'en' ? "Download CV" : "Lebenslauf";
             
@@ -302,9 +300,8 @@
                         ${cvText} <i class="fas fa-download"></i>
                     </a>`;
             }
-            // ---------------------------------
 
-            // Timeline
+            // --- 4. TIMELINE ---
             const tlContainer = document.getElementById('education-timeline');
             tlContainer.innerHTML = '';
             portfolioData.timeline.forEach(item => {
@@ -317,7 +314,7 @@
                     </div>`;
             });
 
-            // Skills
+            // --- 5. SKILLS ---
             const skillsContainer = document.getElementById('skills-grid');
             skillsContainer.innerHTML = '';
             portfolioData.skills.forEach(s => {
@@ -328,19 +325,43 @@
                     </div>`;
             });
 
-            // Projects
+            // --- 6. PROJECTS (SMART IMAGE LOGIC) ---
             const projContainer = document.getElementById('projects-grid');
             projContainer.innerHTML = '';
+            
             portfolioData.projects.forEach(p => {
                 let mediaContent = `<i class="${p.icon_class}"></i>`;
-                if(p.img_src) {
+                
+                // PRIORITY 1: Manual Image in content.js
+                if(p.img_src && p.img_src.trim() !== "") {
                     mediaContent = `<img src="${p.img_src}" alt="Project Image">`;
+                } 
+                // PRIORITY 2: Auto-fetch from GitHub Link
+                else if (p.link && p.link.includes("github.com")) {
+                    // Extract username and repo from link
+                    // Format: https://github.com/USERNAME/REPO
+                    try {
+                        const urlParts = p.link.split('github.com/')[1].split('/');
+                        const user = urlParts[0];
+                        const repo = urlParts[1];
+                        // Construct OpenGraph Image URL
+                        const ghImage = `https://opengraph.githubassets.com/1/${user}/${repo}`;
+                        mediaContent = `<img src="${ghImage}" alt="GitHub Preview">`;
+                    } catch(e) {
+                        console.log("Could not parse GitHub URL for image");
+                    }
                 }
 
-                // Check if link exists
+                // Link Logic
                 let linkHtml = '';
                 if (p.link && p.link.trim() !== "") {
-                    const linkText = currentLang === 'en' ? 'View Project' : 'Projekt ansehen';
+                    // Check if it's a GitHub link to change text
+                    const isGithub = p.link.includes("github.com");
+                    const linkTextEN = isGithub ? 'View Code' : 'View Project';
+                    const linkTextDE = isGithub ? 'Code ansehen' : 'Projekt ansehen';
+                    
+                    const linkText = currentLang === 'en' ? linkTextEN : linkTextDE;
+                    
                     linkHtml = `<div style="margin-top:15px; border-top:1px solid #eee; padding-top:10px;">
                                     <a href="${p.link}" target="_blank" style="font-size:0.85rem; font-weight:600; color:var(--secondary);">
                                         ${linkText} <i class="fas fa-arrow-right" style="font-size:0.8rem; margin-left:5px;"></i>
