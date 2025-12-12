@@ -30,20 +30,29 @@ const portfolioData = {
     // --- UPDATED PROJECTS SECTION (Supports links & unlimited items) ---
     projects: [
         {
+            title_en: "Deep Learning Model for Seismic Data Analysis",
+            title_de: "000",
+            desc_en: "Object Detection, Movement analysis based on seismic data",
+            desc_de: "Entwicklung eines 5-Achsen-3D-Druck-Prototyps.",
+            tags: ["Data Science", "Machine Learning", "AI"],
+            icon_class: "fas fa-cube",
+            link: "" // <--- ADD LINK HERE
+        },
+        {
             title_en: "Study on Workpiece Deformation",
             title_de: "Mehrachsige additive Fertigung",
             desc_en: "Study deformation due to clamping based on experimental, analytical, and CAE approaches",
             desc_de: "Entwicklung eines 5-Achsen-3D-Druck-Prototyps.",
-            tags: ["3D Printing", "Mechatronics"],
+            tags: ["Metrology", "Manufacturing", "FEM"],
             icon_class: "fas fa-cube",
             link: "https://github.com/Bishoy-Labib/StudyWorkpieceDeformation.git" // <--- ADD LINK HERE
         },
         {
             title_en: "Explicit Dynamics Simulation: Deepdrawing",
             title_de: "Optimierung medizinischer Geräte",
-            desc_en: "Designed custom fixturing for 5-axis CNC and validated via CMM.",
+            desc_en: "Experiment with deep drawing process. Analysing stresses and recreating of different failures",
             desc_de: "Untersuchung der Bearbeitungsoptimierung für kieferorthopädische Zangen.",
-            tags: ["CNC", "ANSYS"],
+            tags: ["NonLinear FEM", "ANSYS"],
             icon_class: "fas fa-tools",
             link: "https://github.com/Bishoy-Labib/Deep-Drawing-with-ANSYS.git"
         },
@@ -52,7 +61,7 @@ const portfolioData = {
             title_de: "Automatisierte Qualitätskontrolle",
             desc_en: "Designed a custom fixturing system for 5-axis CNC machining of orthodontic pliers.",
             desc_de: "Implementierung komplexer Messverfahren mittels industrieller 3D-Scanner.",
-            tags: ["Metrology", "Robotics"],
+            tags: ["CNC", "CAD", "CAM"],
             icon_class: "fas fa-robot",
             link: "https://github.com/Bishoy-Labib/MedicalPliersFixturing.git"
         }
