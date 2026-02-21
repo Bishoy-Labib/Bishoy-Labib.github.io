@@ -1,0 +1,229 @@
+/* ─────────────────────────────────────────────
+   lightbox.css  — shared gallery & viewer styles
+   Import in every project page via:
+   <link rel="stylesheet" href="../css/lightbox.css">
+   ───────────────────────────────────────────── */
+
+/* ── Gallery Grid ── */
+.proj-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.gal-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    background: #111;
+    cursor: zoom-in;
+    transition: transform .25s, box-shadow .25s;
+}
+
+.gal-item:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, .4);
+}
+
+.gal-item img,
+.gal-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    pointer-events: none;
+}
+
+/* ▶ badge on video tiles */
+.gal-item.is-video::after {
+    content: '▶';
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, .85);
+    background: rgba(0, 0, 0, .25);
+    pointer-events: none;
+    transition: opacity .2s;
+}
+
+/* ── Lightbox Overlay ── */
+#lb {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, .93);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    align-items: center;
+    justify-content: center;
+    animation: lbIn .2s ease;
+}
+
+#lb.active {
+    display: flex;
+}
+
+@keyframes lbIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+#lb-media-wrap {
+    max-width: 92vw;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lb-img {
+    max-width: 90vw;
+    max-height: 88vh;
+    border-radius: 10px;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, .7);
+    object-fit: contain;
+    display: none;
+    transition: opacity .15s;
+    user-select: none;
+}
+
+#lb-vid {
+    max-width: 90vw;
+    max-height: 88vh;
+    border-radius: 10px;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, .7);
+    display: none;
+    background: #000;
+}
+
+#lb-img.lb-fading,
+#lb-vid.lb-fading {
+    opacity: 0;
+}
+
+#lb-counter {
+    position: fixed;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, .12);
+    color: #fff;
+    font-size: .82rem;
+    padding: 4px 14px;
+    border-radius: 999px;
+    pointer-events: none;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, .15);
+    white-space: nowrap;
+}
+
+#lb-type-badge {
+    position: fixed;
+    top: 18px;
+    left: calc(50% + 80px);
+    background: rgba(255, 165, 0, .22);
+    color: #ffa500;
+    font-size: .75rem;
+    padding: 4px 10px;
+    border-radius: 999px;
+    pointer-events: none;
+    border: 1px solid rgba(255, 165, 0, .3);
+    display: none;
+}
+
+#lb-type-badge.lb-show {
+    display: block;
+}
+
+#lb-close {
+    position: fixed;
+    top: 14px;
+    right: 18px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .13);
+    border: 1px solid rgba(255, 255, 255, .18);
+    color: #fff;
+    font-size: 1.25rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .2s;
+    backdrop-filter: blur(4px);
+}
+
+#lb-close:hover {
+    background: rgba(255, 255, 255, .28);
+}
+
+.lb-arrow {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .12);
+    border: 1px solid rgba(255, 255, 255, .18);
+    color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .2s, transform .2s;
+    backdrop-filter: blur(4px);
+    user-select: none;
+}
+
+.lb-arrow:hover {
+    background: rgba(255, 255, 255, .26);
+}
+
+.lb-arrow:active {
+    transform: translateY(-50%) scale(.92);
+}
+
+#lb-prev {
+    left: 16px;
+}
+
+#lb-next {
+    right: 16px;
+}
+
+/* ── PDF embed ── */
+.pdf-section {
+    margin-top: 40px;
+}
+
+.pdf-section h2 {
+    margin-bottom: 12px;
+}
+
+.pdf-embed-wrap {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, .18);
+    background: #1a1a1a;
+}
+
+.pdf-embed-wrap iframe {
+    display: block;
+    width: 100%;
+    height: 900px;
+    border: none;
+}

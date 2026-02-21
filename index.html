@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bishoy Labib — Multidisciplinary Engineer</title>
+    <meta name="description"
+        content="Portfolio of Bishoy Labib — MSc student and multidisciplinary engineer specialising in quality engineering, robotics, metrology and CAD/CAM.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- NAV -->
+    <nav>
+        <a class="nav-logo" href="index.html">BL<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html" id="nav-home">Home</a></li>
+            <li><a href="projects.html" id="nav-projects">Projects</a></li>
+            <li><a href="experience.html" id="nav-experience">Experience</a></li>
+            <li><a href="resume.html" id="nav-resume">Résumé</a></li>
+            <li><a href="about.html" id="nav-about">About</a></li>
+            <li><a href="contact.html" id="nav-contact" class="nav-cta">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ═══════════════════ HERO ═══════════════════════════════════════════════ -->
+    <div class="hero">
+        <div class="hero-left">
+            <div class="hero-tag">
+                <div class="hero-tag-dot"></div>
+                MSc Student · Open to opportunities
+            </div>
+            <h1 class="hero-name">Bishoy<br><em>Labib</em></h1>
+            <p class="hero-title">Multidisciplinary Engineer &amp; MSc Student · Linz, Austria</p>
+            <p class="hero-desc">
+                Combining technical precision with an adaptable mindset to deliver
+                sustainable, automated, and digitalized solutions.
+                Spanning mechanical design, simulation, quality engineering, robotics, and industrial IoT.
+            </p>
+            <div class="hero-btns">
+                <a class="btn-primary" href="projects.html">View Projects →</a>
+                <a class="btn-outline" href="contact.html">Get In Touch</a>
+            </div>
+            <div class="hero-socials">
+                <a class="hero-social-link" href="https://linkedin.com/in/bishoy-labib/" target="_blank">LinkedIn</a>
+                <a class="hero-social-link" href="https://github.com/beshoyr100" target="_blank">GitHub</a>
+                <a class="hero-social-link" href="mailto:labib.bishoy@outlook.com">Email</a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-photo-wrapper">
+                <img src="images/profile.jpg" alt="Bishoy Labib">
+            </div>
+            <div class="hero-right-overlay"></div>
+            <div class="hero-info-chip chip-status">
+                <div class="chip-label">Status</div>
+                <div class="chip-value"><span class="chip-dot"></span>Available</div>
+            </div>
+            <div class="hero-info-chip chip-location">
+                <div class="chip-label">Location</div>
+                <div class="chip-value">📍 Linz, Austria</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════ DREAM JOBS TIMELINE ════════════════════════════════ 
+    <section class="section" style="background:var(--white);border-bottom:1px solid var(--border);">
+        <div class="section-eyebrow">Fun Fact</div>
+        <h2 class="section-title">List of Dream Jobs</h2>
+        <p class="section-desc" style="margin-bottom:40px;">The career path wasn't exactly linear — but each phase added
+            something useful.</p>
+
+        <div class="dream-timeline-wrap reveal">
+            <div class="dtl-scroll">
+                <div class="dtl-track">
+
+                    <!-- Stop 1 
+                    <div class="dtl-stop">
+                        <div class="dtl-bubble" style="background:#27ae60;color:#fff;"
+                            onclick="this.classList.toggle('current')">
+                            Baseball Star
+                        </div>
+                        <div class="dtl-phase" style="background:#27ae60;">Farmer Phase,<br>Vietnam</div>
+                    </div>
+                    <div class="dtl-conn active"></div>
+
+                    <!-- Stop 2 
+                    <div class="dtl-stop">
+                        <div class="dtl-bubble" style="background:#3498db;color:#fff;"
+                            onclick="this.classList.toggle('current')">
+                            Computer<br>Builder
+                        </div>
+                        <div class="dtl-phase" style="background:#3498db;">Being Useless Phase,<br>WA</div>
+                    </div>
+                    <div class="dtl-conn active"></div>
+
+                    <!-- Stop 3 
+                    <div class="dtl-stop">
+                        <div class="dtl-bubble" style="background:#1a1714;color:#fff;"
+                            onclick="this.classList.toggle('current')">
+                            Astrophysicist
+                        </div>
+                        <div class="dtl-phase" style="background:#1a1714;">College Phase, WA</div>
+                    </div>
+                    <div class="dtl-conn active"></div>
+
+                    <!-- Stop 4 
+                    <div class="dtl-stop">
+                        <div class="dtl-bubble" style="background:#f1c40f;color:#1a1714;"
+                            onclick="this.classList.toggle('current')">
+                            Electrical<br>Engineer
+                        </div>
+                        <div class="dtl-phase" style="background:#1a1714;">Being Useful Phase</div>
+                    </div>
+                    <div class="dtl-conn active"></div>
+
+                    <!-- Stop 5 — CURRENT 
+                    <div class="dtl-stop">
+                        <div class="dtl-here">
+                            <span class="dtl-here-text">I am here!</span>
+                            <div class="dtl-here-arrow"></div>
+                        </div>
+                        <div class="dtl-bubble current" style="background:var(--accent);color:#fff;">
+                            Mechanical<br>Engineer
+                        </div>
+                        <div class="dtl-phase" style="background:var(--accent);">Being Useful Phase</div>
+                    </div>
+                    <div class="dtl-conn"></div>
+
+                    <!-- Stop 6 — Future 
+                    <div class="dtl-stop">
+                        <div class="dtl-bubble"
+                            style="background:var(--bg2);color:var(--muted);border:2px dashed var(--border);"
+                            onclick="this.classList.toggle('current')">
+                            (Still taking<br>suggestions)
+                        </div>
+                        <div class="dtl-phase" style="background:var(--muted);">TBD, Earth (?)</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    -->
+
+    <!-- ═══════════════════ STRENGTHS & WEAKNESSES ═════════════════════════════ -->
+    <section class="section" style="background:var(--bg2);border-bottom:1px solid var(--border);">
+        <div class="section-eyebrow">Self-assessment</div>
+        <h2 class="section-title" style="text-align:center;">Strengths &amp; Weaknesses</h2>
+        <p class="section-desc" style="text-align:center;margin-left:auto;margin-right:auto;">Honest transparency —
+            because engineering is about knowing your limits too.</p>
+
+        <div class="sw-grid">
+            <div class="sw-card strengths reveal reveal-delay-1">
+                <div class="sw-title">💪 Strengths</div>
+                <ul class="sw-list">
+                    <li>
+                        <div class="sw-bullet"></div>Love to design, build, and assemble everything.
+                    </li>
+                    <li>
+                        <div class="sw-bullet"></div>Addicted to machining.
+                    </li>
+                    <li>
+                        <div class="sw-bullet"></div>Somehow managed a 4.61/5.0 GPA while doing all of the above.
+                    </li>
+                </ul>
+            </div>
+            <div class="sw-card weaknesses reveal reveal-delay-2">
+                <div class="sw-title">😬 Weaknesses</div>
+                <ul class="sw-list">
+                    <li>
+                        <div class="sw-bullet"></div>Love to disassemble and fix everything myself
+                    </li>
+                    <li>
+                        <div class="sw-bullet"></div>Addicted to machining.
+                    </li>
+                    <li>
+                        <div class="sw-bullet"></div>Occasionally starts too many projects at once.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ COMPETENCES / SKILLS ═══════════════════════════════ -->
+    <section class="competences-section">
+        <div class="section-eyebrow">What I Do</div>
+        <h2 class="section-title reveal">Core Competences</h2>
+        <div class="skills-grid">
+
+            <div class="skill-card reveal reveal-delay-1">
+                <div class="skill-card-icon">�</div>
+                <div class="skill-card-title">Quality &amp; Metrology</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">GOM Inspect</span><span class="skill-tag">ZEISS Inspect</span>
+                    <span class="skill-tag">PolyWorks</span><span class="skill-tag">CMM Programming</span>
+                    <span class="skill-tag">GD&amp;T</span><span class="skill-tag">3D Scanning</span>
+                    <span class="skill-tag">VMM</span><span class="skill-tag">ISO 9001</span>
+                    <span class="skill-tag">IATF 16949</span><span class="skill-tag">APQP / PPAP</span>
+                    <span class="skill-tag">8D</span><span class="skill-tag">Lean Six Sigma</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal reveal-delay-2">
+                <div class="skill-card-icon">🧮</div>
+                <div class="skill-card-title">Simulation &amp; Experiment</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">FEA / CFD</span><span class="skill-tag">ANSYS Mechanical</span>
+                    <span class="skill-tag">Abaqus</span><span class="skill-tag">FMEA</span>
+                    <span class="skill-tag">MATLAB</span><span class="skill-tag">Digital Twins</span>
+                    <span class="skill-tag">Sim-to-Reality</span><span class="skill-tag">HIL</span>
+                    <span class="skill-tag">Simscape</span><span class="skill-tag">Unity</span>
+                    <span class="skill-tag">VR/AR</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal reveal-delay-3">
+                <div class="skill-card-icon">🤖</div>
+                <div class="skill-card-title">Robotics &amp; Automation</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">ROS2</span><span class="skill-tag">PLC (Ladder, ST)</span>
+                    <span class="skill-tag">TIA Portal</span><span class="skill-tag">URDF / XACRO</span>
+                    <span class="skill-tag">IIoT (MQTT)</span><span class="skill-tag">Sensor Fusion</span>
+                    <span class="skill-tag">HMI Design</span><span class="skill-tag">SCADA</span>
+                    <span class="skill-tag">Embedded Systems</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal reveal-delay-4">
+                <div class="skill-card-icon">🔧</div>
+                <div class="skill-card-title">Manufacturing &amp; Fabrication</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">CNC Machining</span><span class="skill-tag">Rapid Prototyping</span>
+                    <span class="skill-tag">DfM / DfA / DfS</span><span class="skill-tag">Water Jet / Laser</span>
+                    <span class="skill-tag">EdgeCAM</span><span class="skill-tag">Sinumerik</span>
+                    <span class="skill-tag">Fusion CAM</span><span class="skill-tag">Injection Molding</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal reveal-delay-5">
+                <div class="skill-card-icon">�</div>
+                <div class="skill-card-title">Data &amp; Machine Learning</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python (PyTorch, TF)</span><span class="skill-tag">C++</span>
+                    <span class="skill-tag">Computer Vision</span><span class="skill-tag">AI/ML Deployment</span>
+                    <span class="skill-tag">Power BI</span><span class="skill-tag">MSSQL</span>
+                    <span class="skill-tag">Git</span><span class="skill-tag">Linux / Bash</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal reveal-delay-6">
+                <div class="skill-card-icon">🔍</div>
+                <div class="skill-card-title">Maintenance</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Predictive Maintenance</span><span class="skill-tag">Preventive
+                        Maintenance</span>
+                    <span class="skill-tag">Root Cause Analysis</span><span class="skill-tag">Vibration Analysis</span>
+                    <span class="skill-tag">Thermal Imaging</span><span class="skill-tag">Hydraulics / Pneumatics</span>
+                    <span class="skill-tag">Oscilloscope</span><span class="skill-tag">Soldering</span>
+                </div>
+            </div>
+
+            <div class="skill-card reveal reveal-delay-1">
+                <div class="skill-card-icon">�</div>
+                <div class="skill-card-title">Operations &amp; Logistics</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Agile (Scrum)</span><span class="skill-tag">Kanban</span>
+                    <span class="skill-tag">SAP / ERP</span><span class="skill-tag">Project Management</span>
+                    <span class="skill-tag">Technical Training</span><span class="skill-tag">Design Documentation</span>
+                    <span class="skill-tag">Sustainability</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════ EXPERIENCE TEASER ══════════════════════════════════ -->
+    <section class="section">
+        <div class="section-eyebrow">Career Highlights</div>
+        <h2 class="section-title">Recent Experience</h2>
+        <p class="section-desc">A snapshot of professional roles — <a href="experience.html"
+                style="color:var(--accent);text-decoration:none;font-weight:600;">view full experience →</a></p>
+
+        <div class="exp-teaser-grid">
+            <div class="exp-teaser-card reveal reveal-delay-1">
+                <div class="exp-icon-box">⚙️</div>
+                <div>
+                    <div class="exp-role">Mechanical Engineer</div>
+                    <div class="exp-company">ZALNER Engineering Kft.</div>
+                    <div class="exp-date">Sep 2024 – Oct 2025</div>
+                    <div class="exp-desc">Quality Engineering · Advanced metrology (CMM, VMM, 3D scanning) · PPAP / SPC
+                        · IATF 16949 · Equipment lifecycle management.</div>
+                    <div class="exp-tags">
+                        <span class="exp-tag">ISO 9001</span><span class="exp-tag">GD&amp;T</span>
+                        <span class="exp-tag">CMM</span><span class="exp-tag">PPAP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="exp-teaser-card reveal reveal-delay-2">
+                <div class="exp-icon-box">🏥</div>
+                <div>
+                    <div class="exp-role">Manufacturing Engineer Intern</div>
+                    <div class="exp-company">Mobilinter Kft. · ELTE University</div>
+                    <div class="exp-date">Feb 2024 – Aug 2024</div>
+                    <div class="exp-desc">Bachelor's thesis — optimized orthodontic plier manufacturing via 5-axis CNC
+                        and CAD/CAM/CAE. EU MDR &amp; ISO 13485 compliant. TDK 3rd Place.</div>
+                    <div class="exp-tags">
+                        <span class="exp-tag">CAD/CAM</span><span class="exp-tag">5-Axis CNC</span>
+                        <span class="exp-tag">ISO 13485</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ ABOUT TEASER ═══════════════════════════════════════ -->
+    <div class="about-teaser">
+        <div class="about-teaser-text">
+            <div class="section-eyebrow">Who I Am</div>
+            <h2>Engineer.<br><em>Thinker.</em><br>Builder.</h2>
+            <p>I'm Bishoy — a multidisciplinary engineer driven by genuine curiosity for how things work and how they
+                can be made better. I thrive at the intersection of mechanical precision, computational methods, and
+                modern automation.</p>
+            <p>Currently pursuing my MSc in Interdisciplinary Computing (Future Industries) at IT-U Austria in Linz,
+                after completing my BSc in Mechanical Engineering at ELTE, Hungary with Excellence.</p>
+            <a class="btn-primary" href="about.html" style="margin-top:12px;display:inline-block;">Read More About Me
+                →</a>
+        </div>
+        <div class="about-teaser-photo">
+            <!-- Replace with: <img src="images/profile.jpg" alt="Bishoy Labib"> -->
+            <img src="images/profile2.jpg" alt="Bishoy Labib">
+        </div>
+    </div>
+
+    <!-- ═══════════════════ QUICK CONTACTS ═════════════════════════════════════ -->
+    <section class="quick-contacts-section" style="background:var(--bg2);border-top:1px solid var(--border);">
+        <div class="section-eyebrow" style="margin-bottom:32px;">Get In Touch</div>
+        <h2 class="section-title" style="margin-bottom:40px;">Quick Contact</h2>
+        <div class="quick-contacts-grid">
+            <a class="qc-card reveal reveal-delay-1" href="mailto:labib.bishoy@outlook.com">
+                <div class="qc-icon">✉️</div>
+                <div class="qc-label">Email</div>
+                <div class="qc-value">labib.bishoy@outlook.com</div>
+            </a>
+            <a class="qc-card reveal reveal-delay-2" href="https://linkedin.com/in/bishoy-labib/" target="_blank">
+                <div class="qc-icon">💼</div>
+                <div class="qc-label">LinkedIn</div>
+                <div class="qc-value">bishoy-labib</div>
+            </a>
+            <a class="qc-card reveal reveal-delay-3" href="https://github.com/beshoyr100" target="_blank">
+                <div class="qc-icon">🐙</div>
+                <div class="qc-label">GitHub</div>
+                <div class="qc-value">beshoyr100</div>
+            </a>
+            <a class="qc-card reveal reveal-delay-4" href="contact.html">
+                <div class="qc-icon">💬</div>
+                <div class="qc-label">Full Contact Form</div>
+                <div class="qc-value">Send me a message →</div>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 <strong>Bishoy Labib</strong> — Mechanical Engineer &amp; MSc Student</p>
+        <div class="footer-links">
+            <a href="https://linkedin.com/in/bishoy-labib/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/beshoyr100" target="_blank">GitHub</a>
+            <a href="resume.html">Résumé</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

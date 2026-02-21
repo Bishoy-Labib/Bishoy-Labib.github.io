@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEM &amp; Simulation Studies — Bishoy Labib</title>
+    <meta name="description"
+        content="A collection of Finite Element Method projects using ANSYS — structural, thermal, dynamic, and nonlinear simulations from engineering studies.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/lightbox.css">
+</head>
+
+<body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <nav>
+        <a class="nav-logo" href="../index.html">BL<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li><a href="../experience.html">Edu &amp; Experience</a></li>
+            <li><a href="../resume.html">Résumé</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Unified lightbox -->
+    <div id="lb" onclick="LB.outside(event)" role="dialog" aria-modal="true">
+        <span id="lb-counter">1 / 27</span>
+        <span id="lb-type-badge">VIDEO</span>
+        <button id="lb-close" onclick="LB.close()" title="Close (Esc)">&#x2715;</button>
+        <button class="lb-arrow" id="lb-prev" onclick="LB.step(-1)">&#8592;</button>
+        <div id="lb-media-wrap">
+            <img id="lb-img" src="" alt="" draggable="false">
+            <video id="lb-vid" controls autoplay playsinline></video>
+        </div>
+        <button class="lb-arrow" id="lb-next" onclick="LB.step(1)">&#8594;</button>
+    </div>
+
+    <div class="page active" style="margin-top: var(--nav-h);">
+        <a class="back-btn" href="../projects.html">&#8592; Back to Projects</a>
+
+        <div class="project-detail-hero"
+            style="background:linear-gradient(135deg,#0d1a2a,#1a3a5c);margin-top:0;position:relative;overflow:hidden;">
+            <img src="../images/ANSYS/IMG1.png" alt="FEM Simulation"
+                style="width:100%;height:100%;object-fit:cover;opacity:.45;position:absolute;inset:0;">
+            <div class="project-detail-hero-overlay"></div>
+            <div class="project-detail-hero-content" style="position:relative;z-index:2;">
+                <div class="project-tags" style="margin-bottom:12px;">
+                    <span class="project-tag">FEM</span>
+                    <span class="project-tag blue">ANSYS</span>
+                    <span class="project-tag" style="background:rgba(255,255,255,.15);color:#fff;">2022–25</span>
+                </div>
+                <h1>FEM &amp; Simulation Studies</h1>
+            </div>
+        </div>
+
+        <div class="project-detail-body">
+            <div class="project-detail-main">
+                <h2>Project Overview</h2>
+                <p>A curated collection of Finite Element Method assignments and analysis projects completed across
+                    my engineering studies. The work spans structural, thermal, dynamic, and nonlinear simulations
+                    using ANSYS Mechanical, covering real-world engineering problems from stress analysis to
+                    vibration and buckling studies.</p>
+                <h2>Topics Covered</h2>
+                <ul>
+                    <li>Static structural analysis — stress, strain, and deformation under load.</li>
+                    <li>Modal and harmonic analysis — natural frequencies and forced vibration response.</li>
+                    <li>Nonlinear FEA — large deformation, contact mechanics, and plasticity.</li>
+                    <li>Thermal analysis — heat transfer, temperature distribution, and thermal stress coupling.</li>
+                    <li>Buckling analysis — critical load prediction for slender structures.</li>
+                    <li>Mesh convergence studies and element selection validation.</li>
+                </ul>
+
+                <h2>Gallery</h2>
+                <p style="opacity:.6;font-size:.88rem;margin-bottom:10px;">
+                    Click any tile to open the viewer &mdash; swipe or use arrow keys to browse all 27 items. Videos
+                    play with sound in the viewer.
+                </p>
+
+                <div class="proj-gallery">
+                    <div class="gal-item" onclick="LB.open(0)"> <img src="../images/ANSYS/IMG1.png" alt="1"
+                            loading="lazy"></div>
+                    <div class="gal-item" onclick="LB.open(1)"> <img src="../images/ANSYS/IMG2.png" alt="2"
+                            loading="lazy"></div>
+                    <div class="gal-item is-video" onclick="LB.open(2)"> <video src="../images/ANSYS/IMG3.mp4" muted
+                            autoplay loop playsinline preload="metadata"></video></div>
+                    <div class="gal-item" onclick="LB.open(3)"> <img src="../images/ANSYS/IMG4.png" alt="4"
+                            loading="lazy"></div>
+                    <div class="gal-item" onclick="LB.open(4)"> <img src="../images/ANSYS/IMG5.png" alt="5"
+                            loading="lazy"></div>
+                    <div class="gal-item" onclick="LB.open(5)"> <img src="../images/ANSYS/IMG6.png" alt="6"
+                            loading="lazy"></div>
+                    <div class="gal-item is-video" onclick="LB.open(6)"> <video src="../images/ANSYS/IMG7.mp4" muted
+                            autoplay loop playsinline preload="metadata"></video></div>
+                    <div class="gal-item" onclick="LB.open(7)"> <img src="../images/ANSYS/IMG8.png" alt="8"
+                            loading="lazy"></div>
+                    <div class="gal-item is-video" onclick="LB.open(8)"> <video src="../images/ANSYS/IMG9.mp4" muted
+                            autoplay loop playsinline preload="metadata"></video></div>
+                    <div class="gal-item is-video" onclick="LB.open(9)"> <video src="../images/ANSYS/IMG10.mp4" muted
+                            autoplay loop playsinline preload="metadata"></video></div>
+                    <div class="gal-item" onclick="LB.open(10)"> <img src="../images/ANSYS/IMG11.png" alt="11"
+                            loading="lazy"></div>
+                    <div class="gal-item is-video" onclick="LB.open(11)"> <video src="../images/ANSYS/IMG12.mp4" muted
+                            autoplay loop playsinline preload="metadata"></video></div>
+                    <div class="gal-item" onclick="LB.open(12)"> <img src="../images/ANSYS/IMG13.png" alt="13"
+                            loading="lazy"></div>
+                    <div class="gal-item is-video" onclick="LB.open(13)"> <video src="../images/ANSYS/IMG14.mp4" muted
+                            autoplay loop playsinline preload="metadata"></video></div>
+                    <div class="gal-item is-video" onclick="LB.open(14)"> <video src="../images/ANSYS/IMG15.mp4" muted
+                            autoplay loop playsinline preload="metadata"></video></div>
+                    <div class="gal-item is-video" onclick="LB.open(15)"> <video src="../images/ANSYS/IMG16.mp4" muted
+                            autoplay loop playsinline preload="metadata"></video></div>
+                    <div class="gal-item is-video" onclick="LB.open(16)"> <video src="../images/ANSYS/IMG17.mp4" muted
+                            autoplay loop playsinline preload="metadata"></video></div>
+                    <div class="gal-item is-video" onclick="LB.open(17)"> <video src="../images/ANSYS/IMG18.mp4" muted
+                            autoplay loop playsinline preload="metadata"></video></div>
+                    <div class="gal-item" onclick="LB.open(18)"> <img src="../images/ANSYS/IMG19.png" alt="19"
+                            loading="lazy"></div>
+                    <div class="gal-item" onclick="LB.open(19)"> <img src="../images/ANSYS/IMG20.png" alt="20"
+                            loading="lazy"></div>
+                    <div class="gal-item" onclick="LB.open(20)"> <img src="../images/ANSYS/IMG21.png" alt="21"
+                            loading="lazy"></div>
+                    <div class="gal-item is-video" onclick="LB.open(21)"> <video src="../images/ANSYS/IMG22.mp4" muted
+                            autoplay loop playsinline preload="metadata"></video></div>
+                    <div class="gal-item" onclick="LB.open(22)"> <img src="../images/ANSYS/IMG23.png" alt="23"
+                            loading="lazy"></div>
+                    <div class="gal-item" onclick="LB.open(23)"> <img src="../images/ANSYS/IMG24.png" alt="24"
+                            loading="lazy"></div>
+                    <div class="gal-item is-video" onclick="LB.open(24)"> <video src="../images/ANSYS/IMG25.mp4" muted
+                            autoplay loop playsinline preload="metadata"></video></div>
+                    <div class="gal-item" onclick="LB.open(25)"> <img src="../images/ANSYS/IMG26.png" alt="26"
+                            loading="lazy"></div>
+                    <div class="gal-item" onclick="LB.open(26)"> <img src="../images/ANSYS/IMG27.png" alt="27"
+                            loading="lazy"></div>
+                </div>
+            </div>
+
+            <div class="project-sidebar">
+                <div class="sidebar-card">
+                    <h3>Project Details</h3>
+                    <div class="sidebar-info-row"><span class="sidebar-info-label">Period</span><span
+                            class="sidebar-info-value">2022–25</span></div>
+                    <div class="sidebar-info-row"><span class="sidebar-info-label">Type</span><span
+                            class="sidebar-info-value">Academic Studies</span></div>
+                    <div class="sidebar-info-row"><span class="sidebar-info-label">Domain</span><span
+                            class="sidebar-info-value">FEM / Simulation</span></div>
+                    <div class="sidebar-info-row"><span class="sidebar-info-label">Media</span><span
+                            class="sidebar-info-value">15 images · 12 videos</span></div>
+                </div>
+                <div class="sidebar-card">
+                    <h3>Tech Stack</h3>
+                    <div class="sidebar-tags">
+                        <span class="project-tag blue">ANSYS</span>
+                        <span class="project-tag">Mechanical</span>
+                        <span class="project-tag blue">FEM</span>
+                        <span class="project-tag">MATLAB</span>
+                        <span class="project-tag">Abaqus</span>
+                    </div>
+                </div>
+                <a class="btn-primary" href="../contact.html"
+                    style="width:100%;display:block;text-align:center;">Discuss This Project →</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 <strong>Bishoy Labib</strong> — Mechanical Engineer &amp; MSc Student</p>
+        <div class="footer-links">
+            <a href="https://linkedin.com/in/bishoy-labib/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/beshoyr100" target="_blank">GitHub</a>
+            <a href="../resume.html">Résumé</a>
+            <a href="../contact.html">Contact</a>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+    <script src="../js/lightbox.js"></script>
+    <script>
+        LB.init([
+        { src:'../images/ANSYS/IMG1.png' },
+        { src:'../images/ANSYS/IMG2.png' },
+        { src:'../images/ANSYS/IMG3.mp4' },
+        { src:'../images/ANSYS/IMG4.png' },
+        { src:'../images/ANSYS/IMG5.png' },
+        { src:'../images/ANSYS/IMG6.png' },
+        { src:'../images/ANSYS/IMG7.mp4' },
+        { src:'../images/ANSYS/IMG8.png' },
+        { src:'../images/ANSYS/IMG9.mp4' },
+        { src:'../images/ANSYS/IMG10.mp4' },
+        { src:'../images/ANSYS/IMG11.png' },
+        { src:'../images/ANSYS/IMG12.mp4' },
+        { src:'../images/ANSYS/IMG13.png' },
+        { src:'../images/ANSYS/IMG14.mp4' },
+        { src:'../images/ANSYS/IMG15.mp4' },
+        { src:'../images/ANSYS/IMG16.mp4' },
+        { src:'../images/ANSYS/IMG17.mp4' },
+        { src:'../images/ANSYS/IMG18.mp4' },
+        { src:'../images/ANSYS/IMG19.png' },
+        { src:'../images/ANSYS/IMG20.png' },
+        { src:'../images/ANSYS/IMG21.png' },
+        { src:'../images/ANSYS/IMG22.mp4' },
+        { src:'../images/ANSYS/IMG23.png' },
+        { src:'../images/ANSYS/IMG24.png' },
+        { src:'../images/ANSYS/IMG25.mp4' },
+        { src:'../images/ANSYS/IMG26.png' },
+        { src:'../images/ANSYS/IMG27.png' }
+        ]);
+    </script>
+</body>
+
+</html>
+
+
+
+
+

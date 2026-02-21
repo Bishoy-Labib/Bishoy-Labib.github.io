@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Bishoy Labib</title>
+    <meta name="description"
+        content="Engineering projects by Bishoy Labib — robotics, FEA, additive manufacturing, metrology, and more.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <nav>
+        <a class="nav-logo" href="index.html">BL<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html" id="nav-home">Home</a></li>
+            <li><a href="projects.html" id="nav-projects">Projects</a></li>
+            <li><a href="experience.html" id="nav-experience">Edu &amp; Experience</a></li>
+            <li><a href="resume.html" id="nav-resume">Résumé</a></li>
+            <li><a href="about.html" id="nav-about">About</a></li>
+            <li><a href="contact.html" id="nav-contact" class="nav-cta">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ═══ PROJECTS GRID ══════════════════════════════════════════════════════ -->
+    <div id="page-projects-grid" class="page active" style="margin-top:var(--nav-h);">
+        <section class="section">
+            <div class="section-eyebrow">Portfolio</div>
+            <h2 class="section-title">Research &amp; Engineering<br>Projects</h2>
+            <p class="section-desc">Hands-on projects spanning digital twins, additive manufacturing, structural
+                analysis, and medical device optimization.</p>
+
+            <div class="projects-grid">
+
+                <div class="project-card reveal reveal-delay-1"
+                    onclick="window.location.href='projects/project-p0.html'">
+                    <div class="project-img-placeholder" style="background:#111;padding:0;">
+                        <img src="images/unlisted/IMG1.jpg" alt="Engineering Notebook"
+                            style="width:100%;height:100%;object-fit:cover;display:block;opacity:.85;">
+                        <div class="project-img-overlay">
+                            <div class="project-view-btn">View Details →</div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="project-tag">Mechanical</span>
+                            <span class="project-tag blue">Lab Work</span>
+                            <span class="project-tag">Mixed</span>
+                        </div>
+                        <div class="project-title">Engineering Notebook</div>
+                        <p class="project-desc">A curated collection of hands-on engineering work — spanning mechanical
+                            components, technical drawings, lab experiments, and workshop activities.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-footer-link">Explore Project →</span>
+                        <span class="project-year">2022–25</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal reveal-delay-2"
+                    onclick="window.location.href='projects/project-p1.html'">
+                    <div class="project-img-placeholder" style="background:linear-gradient(135deg,#1a3a5c,#2e5c8a);">
+                        🤖
+                        <div class="project-img-overlay">
+                            <div class="project-view-btn">View Details →</div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="project-tag">Robotics</span>
+                            <span class="project-tag blue">ROS2</span>
+                            <span class="project-tag blue">Digital Twin</span>
+                        </div>
+                        <div class="project-title">Digital Twin &amp; Robotics Integration (Industry 5.0)</div>
+                        <p class="project-desc">Synchronized digital twin pipeline for the SO-100 robot, bridging Fusion
+                            360 CAD with ROS2 motion planning via Unity and NVIDIA Isaac Sim.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-footer-link">Explore Project →</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal reveal-delay-3"
+                    onclick="window.location.href='projects/project-p2.html'">
+                    <div class="project-img-placeholder" style="background:linear-gradient(135deg,#2d1a0e,#6b3318);">
+                        🖨️
+                        <div class="project-img-overlay">
+                            <div class="project-view-btn">View Details →</div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="project-tag">Additive Mfg.</span>
+                            <span class="project-tag blue">Python</span>
+                            <span class="project-tag">5-Axis</span>
+                        </div>
+                        <div class="project-title">Custom 5-Axis Slicing Engine</div>
+                        <p class="project-desc">Custom slicing logic enabling non-linear 5-axis toolpaths beyond 3-axis
+                            constraints, improving mechanical properties and reducing support structures.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-footer-link">Explore Project →</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal reveal-delay-4"
+                    onclick="window.location.href='projects/project-p3.html'">
+                    <div class="project-img-placeholder" style="background:#111;padding:0;">
+                        <img src="images/Deepdrawing/IMG1.png" alt="Deep Drawing FEA"
+                            style="width:100%;height:100%;object-fit:cover;display:block;opacity:.85;">
+                        <div class="project-img-overlay">
+                            <div class="project-view-btn">View Details →</div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="project-tag">FEA</span>
+                            <span class="project-tag">ANSYS</span>
+                            <span class="project-tag blue">Structural</span>
+                        </div>
+                        <div class="project-title">Manufacturing Validation &amp; FEA</div>
+                        <p class="project-desc">Explicit Dynamics simulation of deep drawing operations and Eurocode 3
+                            structural compliance verification for large-scale steel structures.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-footer-link">Explore Project →</span>
+                        <span class="project-year">2023–24</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal reveal-delay-5"
+                    onclick="window.location.href='projects/project-p7.html'">
+                    <div class="project-img-placeholder" style="background:#111;padding:0;">
+                        <img src="images/Medical_Pliers/IMG1.png" alt="Medical Pliers"
+                            style="width:100%;height:100%;object-fit:cover;display:block;opacity:.85;">
+                        <div class="project-img-overlay">
+                            <div class="project-view-btn">View Details →</div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="project-tag">Medical Devices</span>
+                            <span class="project-tag blue">ISO 13485</span>
+                            <span class="project-tag">CNC</span>
+                        </div>
+                        <div class="project-title">Medical Device Manufacturing Optimization</div>
+                        <p class="project-desc">Bachelor's thesis — optimization of orthodontic plier manufacturing via
+                            CAD/CAM/CAE, ensuring EU MDR and ISO 13485 compliance. TDK 3rd Place.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-footer-link">Explore Project →</span>
+                        <span class="project-year">2024</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal reveal-delay-6"
+                    onclick="window.location.href='projects/project-p5.html'">
+                    <div class="project-img-placeholder" style="background:#111;padding:0;">
+                        <img src="images/Measurments/IMG1.jpg" alt="Measurement Systems"
+                            style="width:100%;height:100%;object-fit:cover;display:block;opacity:.85;">
+                        <div class="project-img-overlay">
+                            <div class="project-view-btn">View Details →</div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="project-tag">Metrology</span>
+                            <span class="project-tag blue">Quality</span>
+                            <span class="project-tag">CMM</span>
+                        </div>
+                        <div class="project-title">Advanced Measurement Systems &amp; Metrology</div>
+                        <p class="project-desc">Programming and managing robotic arms, VMMs, CMMs, and 3D optical
+                            scanning systems for high-precision inspection at ZALNER.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-footer-link">Explore Project →</span>
+                        <span class="project-year">2024–25</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal reveal-delay-2"
+                    onclick="window.location.href='projects/project-p8.html'">
+                    <div class="project-img-placeholder" style="background:#111;padding:0;">
+                        <img src="images/Stepper_Controller/IMG1.png" alt="Stepper Controller"
+                            style="width:100%;height:100%;object-fit:cover;display:block;opacity:.85;">
+                        <div class="project-img-overlay">
+                            <div class="project-view-btn">View Details &rarr;</div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="project-tag">Electronics</span>
+                            <span class="project-tag blue">Embedded</span>
+                            <span class="project-tag">PCB</span>
+                        </div>
+                        <div class="project-title">Stepper Motor Controller</div>
+                        <p class="project-desc">Design and build of a stepper motor controller &mdash; PCB design,
+                            firmware
+                            development, and mechanical integration for position-controlled actuation.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-footer-link">Explore Project &rarr;</span>
+                        <span class="project-year">2023&ndash;24</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal reveal-delay-3"
+                    onclick="window.location.href='projects/project-p9.html'">
+                    <div class="project-img-placeholder" style="background:#111;padding:0;">
+                        <img src="images/Vehicle_Maintenance/IMG1.jpg" alt="Vehicle Maintenance"
+                            style="width:100%;height:100%;object-fit:cover;display:block;opacity:.85;">
+                        <div class="project-img-overlay">
+                            <div class="project-view-btn">View Details &rarr;</div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="project-tag">Automotive</span>
+                            <span class="project-tag blue">Mechanical</span>
+                            <span class="project-tag">Workshop</span>
+                        </div>
+                        <div class="project-title">Vehicle Maintenance</div>
+                        <p class="project-desc">Hands-on vehicle servicing covering engine, brakes, suspension, and
+                            drivetrain &mdash; diagnostics and mechanical repair in a real workshop setting.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-footer-link">Explore Project &rarr;</span>
+                        <span class="project-year">2023&ndash;25</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal reveal-delay-4"
+                    onclick="window.location.href='projects/project-p10.html'">
+                    <div class="project-img-placeholder" style="background:#111;padding:0;">
+                        <img src="images/Toolpresetters_Retrofit/IMG1.jpg" alt="Tool Presetter Retrofit"
+                            style="width:100%;height:100%;object-fit:cover;display:block;opacity:.85;">
+                        <div class="project-img-overlay">
+                            <div class="project-view-btn">View Details &rarr;</div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="project-tag">Metrology</span>
+                            <span class="project-tag blue">Calibration</span>
+                            <span class="project-tag">CNC</span>
+                        </div>
+                        <div class="project-title">Tool Presetter Retrofit</div>
+                        <p class="project-desc">Full mechanical overhaul and calibration of a tool presetter, restoring
+                            it
+                            to precision metrology standards for CNC tool measurement.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-footer-link">Explore Project &rarr;</span>
+                        <span class="project-year">2024&ndash;25</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal reveal-delay-5"
+                    onclick="window.location.href='projects/project-p11.html'">
+                    <div class="project-img-placeholder" style="background:#111;padding:0;">
+                        <img src="images/Materials/IMG1.jpg" alt="Material Characterisation"
+                            style="width:100%;height:100%;object-fit:cover;display:block;opacity:.85;">
+                        <div class="project-img-overlay">
+                            <div class="project-view-btn">View Details &rarr;</div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="project-tag">Materials</span>
+                            <span class="project-tag blue">Testing</span>
+                            <span class="project-tag">Microscopy</span>
+                        </div>
+                        <div class="project-title">Material Characterisation</div>
+                        <p class="project-desc">Mechanical testing, microstructural analysis, and property evaluation of
+                            engineering materials — tensile, hardness, impact, and failure analysis.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-footer-link">Explore Project &rarr;</span>
+                        <span class="project-year">2022&ndash;25</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal reveal-delay-6"
+                    onclick="window.location.href='projects/project-p12.html'">
+                    <div class="project-img-placeholder" style="background:#111;padding:0;">
+                        <img src="images/ANSYS/IMG1.png" alt="FEM Simulation Studies"
+                            style="width:100%;height:100%;object-fit:cover;display:block;opacity:.85;">
+                        <div class="project-img-overlay">
+                            <div class="project-view-btn">View Details &rarr;</div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="project-tag blue">FEM</span>
+                            <span class="project-tag">ANSYS</span>
+                            <span class="project-tag">Simulation</span>
+                        </div>
+                        <div class="project-title">FEM &amp; Simulation Studies</div>
+                        <p class="project-desc">A collection of structural, thermal, dynamic, and nonlinear FEM
+                            simulations completed during engineering studies — images &amp; animations.</p>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-footer-link">Explore Project &rarr;</span>
+                        <span class="project-year">2022&ndash;25</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+
+    <footer>
+        <p>© 2025 <strong>Bishoy Labib</strong> — Mechanical Engineer &amp; MSc Student</p>
+        <div class="footer-links">
+            <a href="https://linkedin.com/in/bishoy-labib/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/beshoyr100" target="_blank">GitHub</a>
+            <a href="resume.html">Résumé</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
