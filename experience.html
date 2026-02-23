@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page-experience">
 
     <div class="cursor" id="cursor"></div>
     <div class="cursor-ring" id="cursorRing"></div>
@@ -21,19 +21,17 @@
     <nav>
         <a class="nav-logo" href="index.html">BL<span>.</span></a>
         <ul class="nav-links">
-            <li><a href="index.html" id="nav-home">Home</a></li>
-            <li><a href="projects.html" id="nav-projects">Projects</a></li>
-            <li><a href="experience.html" id="nav-experience">Edu &amp; Experience</a></li>
-            <li><a href="resume.html" id="nav-resume">Résumé</a></li>
-            <li><a href="about.html" id="nav-about">About</a></li>
-            <li><a href="contact.html" id="nav-contact" class="nav-cta">Contact</a></li>
-        </ul>
+            <li><a href="index.html" id="nav-home" data-i18n="nav.home">Home</a></li>
+            <li><a href="projects.html" id="nav-projects" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="experience.html" id="nav-experience" data-i18n="nav.experience">Edu &amp; Experience</a></li>
+            <li><a href="contact.html" id="nav-contact" class="nav-cta" data-i18n="nav.contact">Contact</a></li>
+        <div class="lang-switcher"><button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button><button class="lang-btn" data-lang="de" onclick="setLang('de')">DE</button></div>
     </nav>
 
     <section class="section" style="margin-top:var(--nav-h);">
-        <div class="section-eyebrow">Background</div>
-        <h2 class="section-title">Experience &amp;<br>Education</h2>
-        <p class="section-desc">A journey across quality engineering, manufacturing, robotics, and computational methods
+        <div class="section-eyebrow exp-eyebrow" data-i18n="experience_page.eyebrow">Background</div>
+        <h2 class="section-title exp-title" data-i18n="experience_page.title">Experience &amp;<br>Education</h2>
+        <p class="section-desc exp-desc" data-i18n="experience_page.desc">A journey across quality engineering, manufacturing, robotics, and computational methods
             — built on a strong academic foundation.</p>
 
         <div class="exp-grid">
@@ -132,6 +130,68 @@
         </div>
     </section>
 
+
+    
+    <!-- Awards -->
+    <div class="awards-section">
+        <div class="section-eyebrow" style="margin-bottom:32px;">Awards &amp; Recognition</div>
+        <div class="awards-grid">
+            <div class="award-card reveal">
+                <div class="award-icon">🏅</div>
+                <div>
+                    <div class="award-title">Faculty's Outstanding Student Recognition — ELTE Hungary</div>
+                    <div class="award-desc">Awarded to top-tier students for maintaining a high GPA and contributing to
+                        faculty research. Based on academic excellence and faculty nominations.</div>
+                </div>
+            </div>
+            <div class="award-card reveal reveal-delay-2">
+                <div class="award-icon">🏆</div>
+                <div>
+                    <div class="award-title">3rd Place — TDK Scientific Students' Associations Conference</div>
+                    <div class="award-desc">Recognized for independent research on manufacturing optimization for
+                        medical devices. Developed workflows ensuring ISO 13485 and EU MDR compliance.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <!-- Languages -->
+    <div class="langs-section">
+        <div class="section-eyebrow" style="margin-bottom:32px;">Languages</div>
+        <div class="langs-grid">
+            <div class="lang-card reveal">
+                <div class="lang-name">Arabic</div>
+                <div class="lang-level">Native</div>
+                <div class="lang-bar">
+                    <div class="lang-bar-fill" style="width:100%"></div>
+                </div>
+            </div>
+            <div class="lang-card reveal reveal-delay-2">
+                <div class="lang-name">English</div>
+                <div class="lang-level">C1 - Business Level</div>
+                <div class="lang-bar">
+                    <div class="lang-bar-fill" style="width:85%"></div>
+                </div>
+            </div>
+            <div class="lang-card reveal reveal-delay-3">
+                <div class="lang-name">German</div>
+                <div class="lang-level">A2 - Learning Hard</div>
+                <div class="lang-bar">
+                    <div class="lang-bar-fill" style="width:30%"></div>
+                </div>
+            </div>
+            <div class="lang-card reveal reveal-delay-4">
+                <div class="lang-name">Hungarian</div>
+                <div class="lang-level">Conversational</div>
+                <div class="lang-bar">
+                    <div class="lang-bar-fill" style="width:40%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Gears / Skills Visual -->
     <section class="gears-section">
         <div class="gears-text">
@@ -142,7 +202,7 @@
         <div class="gears-canvas-wrap">
             <canvas id="gearsCanvas" width="360" height="280"></canvas>
         </div>
-        <div class="gears-skills">
+        <!-- div class="gears-skills">
             <div class="gears-skill-row">
                 <div class="gears-skill-dot"></div>FEA / CFD · ANSYS · Abaqus
             </div>
@@ -163,6 +223,24 @@
             </div>
             <div class="gears-skill-row">
                 <div class="gears-skill-dot"></div>Agile · SAP / ERP · Project Management
+            </div -->
+
+            
+        <div class="about-right">
+            <div class="value-card">
+                <div class="value-title">🎯 Precision-Driven</div>
+                <div class="value-desc">Engineering decisions grounded in data, simulation, and standards - from
+                    GD&amp;T to FEA convergence studies.</div>
+            </div>
+            <div class="value-card">
+                <div class="value-title">🔗 Systems Thinking</div>
+                <div class="value-desc">I see products as systems - understanding the full lifecycle from design,
+                    manufacturing, and quality to end-of-life.</div>
+            </div>
+            <div class="value-card">
+                <div class="value-title">🚀 Always Learning</div>
+                <div class="value-desc">From Digital Twins to ROS2 robotics to 5-axis additive manufacturing - I
+                    constantly push into new technical frontiers.</div>
             </div>
         </div>
     </section>
@@ -176,6 +254,7 @@
             <a href="contact.html">Contact</a>
         </div>
     </footer>
+    <script src="js/i18n.js"></script>
 
     <script src="js/script.js"></script>
 </body>

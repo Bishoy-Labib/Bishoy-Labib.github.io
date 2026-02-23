@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FEM &amp; Simulation Studies — Bishoy Labib</title>
+    <title>FEM &amp; Simulation Studies - Bishoy Labib</title>
     <meta name="description"
         content="A collection of Finite Element Method projects using ANSYS — structural, thermal, dynamic, and nonlinear simulations from engineering studies.">
     <link
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/lightbox.css">
 </head>
 
-<body>
+<body class="page-project" data-project-id="31412">
     <div class="cursor" id="cursor"></div>
     <div class="cursor-ring" id="cursorRing"></div>
 
@@ -24,10 +24,9 @@
             <li><a href="../index.html">Home</a></li>
             <li><a href="../projects.html">Projects</a></li>
             <li><a href="../experience.html">Edu &amp; Experience</a></li>
-            <li><a href="../resume.html">Résumé</a></li>
-            <li><a href="../about.html">About</a></li>
+
             <li><a href="../contact.html" class="nav-cta">Contact</a></li>
-        </ul>
+        <div class="lang-switcher"><button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button><button class="lang-btn" data-lang="de" onclick="setLang('de')">DE</button></div>
     </nav>
 
     <!-- Unified lightbox -->
@@ -55,7 +54,7 @@
                 <div class="project-tags" style="margin-bottom:12px;">
                     <span class="project-tag">FEM</span>
                     <span class="project-tag blue">ANSYS</span>
-                    <span class="project-tag" style="background:rgba(255,255,255,.15);color:#fff;">2022–25</span>
+                    <span class="project-tag" style="background:rgba(255,255,255,.15);color:#fff;">2022 - 2025</span>
                 </div>
                 <h1>FEM &amp; Simulation Studies</h1>
             </div>
@@ -64,18 +63,17 @@
         <div class="project-detail-body">
             <div class="project-detail-main">
                 <h2>Project Overview</h2>
-                <p>A curated collection of Finite Element Method assignments and analysis projects completed across
+                <p class="project-overview-text">A curated collection of Finite Element Method assignments and analysis projects completed across
                     my engineering studies. The work spans structural, thermal, dynamic, and nonlinear simulations
                     using ANSYS Mechanical, covering real-world engineering problems from stress analysis to
                     vibration and buckling studies.</p>
-                <h2>Topics Covered</h2>
-                <ul>
-                    <li>Static structural analysis — stress, strain, and deformation under load.</li>
-                    <li>Modal and harmonic analysis — natural frequencies and forced vibration response.</li>
-                    <li>Nonlinear FEA — large deformation, contact mechanics, and plasticity.</li>
-                    <li>Thermal analysis — heat transfer, temperature distribution, and thermal stress coupling.</li>
-                    <li>Buckling analysis — critical load prediction for slender structures.</li>
-                    <li>Mesh convergence studies and element selection validation.</li>
+                <h2 class="project-bullets-h2">Topics Covered</h2></h2>
+                <ul class="project-bullets"><li>Static structural analysis - stress, strain, and deformation under load.</li>
+                    <li>Modal and harmonic analysis - natural frequencies and forced vibration response.</li>
+                    <li>Nonlinear FEA - large deformation, contact mechanics, and plasticity.</li>
+                    <li>Thermal analysis - heat transfer, temperature distribution, and thermal stress coupling.</li>
+                    <li>Buckling analysis - critical load prediction for slender structures.</li>
+                    <li>Mesh convergence and singularity studies and element selection validation.</li>
                 </ul>
 
                 <h2>Gallery</h2>
@@ -139,33 +137,27 @@
                             loading="lazy"></div>
                     <div class="gal-item" onclick="LB.open(26)"> <img src="../images/ANSYS/IMG27.png" alt="27"
                             loading="lazy"></div>
+                    <div class="gal-item" onclick="LB.open(27)"> <img src="../images/ANSYS/IMG28.png" alt="28"
+                            loading="lazy"></div>
                 </div>
             </div>
 
             <div class="project-sidebar">
                 <div class="sidebar-card">
                     <h3>Project Details</h3>
-                    <div class="sidebar-info-row"><span class="sidebar-info-label">Period</span><span
-                            class="sidebar-info-value">2022–25</span></div>
-                    <div class="sidebar-info-row"><span class="sidebar-info-label">Type</span><span
-                            class="sidebar-info-value">Academic Studies</span></div>
-                    <div class="sidebar-info-row"><span class="sidebar-info-label">Domain</span><span
-                            class="sidebar-info-value">FEM / Simulation</span></div>
-                    <div class="sidebar-info-row"><span class="sidebar-info-label">Media</span><span
-                            class="sidebar-info-value">15 images · 12 videos</span></div>
+                        <div class="sidebar-info-row"><span class="sidebar-info-label">Date</span><span
+                                        class="sidebar-info-value">2022 - 2025</span></div>
+                        <div class="sidebar-info-row"><span class="sidebar-info-label">Type</span><span
+                                        class="sidebar-info-value">Mixed</span></div>
                 </div>
                 <div class="sidebar-card">
-                    <h3>Tech Stack</h3>
-                    <div class="sidebar-tags">
-                        <span class="project-tag blue">ANSYS</span>
-                        <span class="project-tag">Mechanical</span>
-                        <span class="project-tag blue">FEM</span>
-                        <span class="project-tag">MATLAB</span>
-                        <span class="project-tag">Abaqus</span>
-                    </div>
+                    <h3>Domains & Skills</h3>
+                        <div class="sidebar-tags">
+                            <span class="project-tag">Cooming Soon</span>
+                        </div>
                 </div>
-                <a class="btn-primary" href="../contact.html"
-                    style="width:100%;display:block;text-align:center;">Discuss This Project →</a>
+                <a class="btn-primary" href="../contact.html" style="width:100%;display:block;text-align:center;">Discuss
+                                This Project →</a>
             </div>
         </div>
     </div>
@@ -179,6 +171,7 @@
             <a href="../contact.html">Contact</a>
         </div>
     </footer>
+    <script src="../js/i18n.js"></script>
 
     <script src="../js/script.js"></script>
 
@@ -211,7 +204,8 @@
         { src:'../images/ANSYS/IMG24.png' },
         { src:'../images/ANSYS/IMG25.mp4' },
         { src:'../images/ANSYS/IMG26.png' },
-        { src:'../images/ANSYS/IMG27.png' }
+        { src:'../images/ANSYS/IMG27.png' },
+        { src:'../images/ANSYS/IMG28.png' }
         ]);
     </script>
 </body>

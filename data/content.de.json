@@ -1,0 +1,476 @@
+{
+  "lang": "de",
+  "nav": {
+    "home": "Startseite",
+    "projects": "Projekte",
+    "experience": "Ausb. & Erfahrung",
+    "resume": "Lebenslauf",
+    "about": "Über mich",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "copy": "© 2025 <strong>Bishoy Labib</strong> - Maschinenbauingenieur & MSc-Student",
+    "links": ["LinkedIn", "GitHub", "Lebenslauf", "Kontakt"]
+  },
+  "index": {
+    "heroTag": "Offen für Stellenangebote",
+    "heroTitle": "BSc. Maschinenbauingenieur & MSc-Student · Linz, Österreich",
+    "heroDesc": "Technische Präzision mit einem anpassungsfähigen Mindset vereint, um nachhaltige, automatisierte und digitalisierte Lösungen zu liefern.",
+    "heroBtnProjects": "Projekte ansehen →",
+    "heroBtnContact": "Kontakt aufnehmen",
+    "chipStatus": "Status",
+    "chipStatusValue": "Verfügbar für Stellen",
+    "chipLocation": "Standort",
+    "chipLocationValue": "📍 Linz, Österreich",
+    "swEyebrow": "Selbsteinschätzung",
+    "swTitle": "Stärken & Schwächen",
+    "swDesc": "Ehrliche Transparenz - denn Ingenieurwesen bedeutet auch, die eigenen Grenzen zu kennen.",
+    "swStrengthsTitle": "💪 Stärken",
+    "swStrengths": [
+      "Liebe es, alles zu entwerfen, zu bauen und zusammenzubauen.",
+      "Süchtig nach Zerspanung.",
+      "Aktiver Zuhörer und Lernender"
+    ],
+    "swWeaknessesTitle": "😬 Schwächen",
+    "swWeaknesses": [
+      "Liebe es, alles selbst auseinanderzunehmen und zu reparieren.",
+      "Süchtig nach Zerspanung.",
+      "Beginnt gelegentlich zu viele Projekte gleichzeitig."
+    ],
+    "skillsEyebrow": "Was ich tue",
+    "skillsTitle": "Kernkompetenzen",
+    "skills": [
+      { "icon": "🎯", "title": "Qualität & Metrologie", "tags": ["GOM Inspect","ZEISS Inspect","PolyWorks","KMG-Programmierung","GD&T","3D-Scanning","VMM","ISO 9001","IATF 16949","APQP / PPAP","8D","Lean Six Sigma"] },
+      { "icon": "🧮", "title": "Simulation & Experiment", "tags": ["FEA / CFD","ANSYS Mechanical","Abaqus","FMEA","MATLAB","Digitale Zwillinge","Sim-to-Reality","HIL","Simscape","Unity","VR/AR"] },
+      { "icon": "🤖", "title": "Robotik & Automatisierung", "tags": ["ROS2","SPS (Leiter, ST)","TIA Portal","URDF / XACRO","IIoT (MQTT)","Sensorfusion","HMI-Design","SCADA","Eingebettete Systeme"] },
+      { "icon": "🔧", "title": "Fertigung & Produktion", "tags": ["CNC-Bearbeitung","Rapid Prototyping","DfM / DfA / DfS","Wasserstrahl / Laser","EdgeCAM","Sinumerik","Fusion CAM","Spritzguss"] },
+      { "icon": "📊", "title": "Daten & Maschinelles Lernen", "tags": ["Python (PyTorch, TF)","C++","Computer Vision","KI/ML-Deployment","Power BI","MSSQL","Git","Linux / Bash"] },
+      { "icon": "🔍", "title": "Instandhaltung", "tags": ["Vorausschauende Wartung","Vorbeugende Wartung","Ursachenanalyse","Schwingungsanalyse","Thermografie","Hydraulik / Pneumatik","Oszilloskop","Löten"] },
+      { "icon": "📋", "title": "Betrieb & Logistik", "tags": ["Agile (Scrum)","Kanban","SAP / ERP","Projektmanagement","Technische Schulung","Designdokumentation","Nachhaltigkeit"] },
+      { "icon": "📋", "title": "Sie möchten etwas Neues empfehlen?", "tags": ["Eine neue Technologie","Ein neues Projekt?","Ich bin offen für Ihre Empfehlungen","Melden Sie sich gerne bei mir"] }
+    ],
+    "expEyebrow": "Karriere-Highlights",
+    "expTitle": "Neueste Erfahrung",
+    "expDesc": "Ein Überblick über berufliche Stationen - <a href=\"experience.html\" style=\"color:var(--accent);text-decoration:none;font-weight:600;\">vollständige Erfahrung ansehen →</a>",
+    "expItems": [
+      { "icon": "⚙️", "role": "Maschinenbauingenieur", "company": "ZALNER Engineering Kft.", "date": "Sep 2024 – Okt 2025", "desc": "Qualitätsingenieurwesen · Hochpräzise Metrologie (KMG, VMM, 3D-Scanning) · PPAP / SPC · IATF 16949 · Gerätelebenszyklusmanagement.", "tags": ["ISO 9001","GD&T","KMG","PPAP"] },
+      { "icon": "🏥", "role": "Fertigungsingenieur (Praktikum)", "company": "Mobilinter Kft. · ELTE Universität", "date": "Feb 2024 – Aug 2024", "desc": "Bachelorarbeit - Optimierung der Kieferorthopädie-Zangenfertigung via 5-Achs-CNC und CAD/CAM/CAE. EU-MDR & ISO 13485 konform. TDK 3. Platz.", "tags": ["CAD/CAM","5-Achs-CNC","ISO 13485"] }
+    ],
+    "aboutEyebrow": "Wer ich bin",
+    "aboutTitle": "Ingenieur.<br><em>Denker.</em><br>Macher.",
+    "aboutP1": "Ich bin Bishoy – ein Ingenieur, angetrieben von echter Neugier darauf, wie Dinge funktionieren und wie sie verbessert werden können. Ich gedeihe an der Schnittstelle von mechanischen Systemen, Berechnungsmethoden und Mensch-Technik-Interaktion, um Technologien in verschiedenen Bereichen zu verbessern – vom Operationssaal bis zur Werkstatt und zum Forschungslabor.",
+    "aboutP2": "Derzeit absolviere ich meinen MSc in Interdisciplinary Computing (Future Industries) in Linz, nachdem ich meinen BSc in Maschinenbau an der ELTE in Budapest mit Auszeichnung abgeschlossen habe. Ich habe mehrere Auszeichnungen und Anerkennungen von der Universität für meine freiwillige, akademische und Forschungsarbeit erhalten, darunter die Auszeichnung als herausragender Student der Fakultät.",
+    "aboutP3": "Ich lerne und entwickle mich täglich weiter und engagiere mich gerne in meiner Community, um einen Beitrag zu leisten – sei es durch Mentoring, Freiwilligenarbeit oder Wissensaustausch.",
+    "aboutBtn": "Meine Ausbildung & Erfahrung ansehen →",
+    "contactEyebrow": "Kontakt",
+    "contactTitle": "Schnellkontakt",
+    "contactItems": [
+      { "icon": "✉️", "label": "E-Mail", "value": "labib.bishoy@outlook.com", "href": "mailto:labib.bishoy@outlook.com" },
+      { "icon": "💼", "label": "LinkedIn", "value": "bishoy-labib", "href": "https://linkedin.com/in/bishoy-labib/" },
+      { "icon": "🐙", "label": "GitHub", "value": "beshoyr100", "href": "https://github.com/beshoyr100" },
+      { "icon": "💬", "label": "Vollständiges Kontaktformular", "value": "Nachricht senden →", "href": "contact.html" }
+    ]
+  },
+  "projects_page": {
+    "eyebrow": "Portfolio",
+    "title": "Forschungs- &amp; Ingenieurprojekte",
+    "desc1": "Willkommen in meinem Projektportfolio – dieser Bereich befindet sich derzeit im Aufbau und ich bemühe mich, alles bald zu dokumentieren und hochzuladen, einschließlich laufender Projekte. <br>Diese Seite enthält Teile meiner Lernreise, die Freude am Prozess und das Glück des Ankommens. <br>Bitte beachten Sie, dass viele meiner realen Industrieprojekte aufgrund von NDAs vertraulich sind.",
+    "viewDetails": "Details ansehen →",
+    "exploreProject": "Projekt erkunden →"
+  },
+  "experience_page": {
+    "eyebrow": "Hintergrund",
+    "title": "Erfahrung &<br>Ausbildung",
+    "desc": "Ein Weg durch Qualitätsingenieurwesen, Fertigung, Robotik und Berechnungsmethoden - auf einem starken akademischen Fundament.",
+    "workLabel": "Berufserfahrung",
+    "educationLabel": "Ausbildung",
+    "gearsEyebrow": "Technische Tiefe",
+    "gearsTitle": "Wo Präzision auf<br><em>Einfallsreichtum</em> trifft",
+    "gearsDesc": "Von FEA-Simulationen bis zu CNC-Werkzeugpfaden - jedes Zahnrad in der Maschine hat einen Zweck.",
+    "workItems": [
+      { "date": "Sep 2024 – Okt 2025", "role": "Maschinenbauingenieur", "company": "ZALNER Engineering Kft.", "desc": "Qualitätsingenieurwesen (ISO 9001, IATF 16949, GD&T), fortschrittliche Metrologie-Programmierung (KMG, VMM, 3D-Scanning), Punktwolken- & Netzverarbeitung, Gerätelebenszyklusmanagement und Werkzeugvoreinstellungsretrofit <br>(Mehr Details folgen bald)", "tags": ["ISO 9001","IATF 16949","GD&T","KMG","PPAP"] },
+      { "date": "Feb 2024 – Aug 2024", "role": "Fertigungsingenieur (Praktikum)", "company": "Mobilinter Kft. | Eötvös-Loránd-Universität", "desc": "Bachelorarbeit zur Optimierung der Medizinproduktherstellung. Entwurf von 5-Achs-CNC-Spannvorrichtungen für Kieferorthopädie-Zangen. Gesenkschmiedeanalyse nach DIN EN 10243. EU-MDR und ISO 13485 konform.", "tags": ["CAD/CAM","5-Achs-CNC","ISO 13485","EU-MDR"] },
+      { "date": "Laufend (Eigenständig)", "role": "Fahrzeugsystemwartung", "company": "Eigenständig, Ungarn", "desc": "Komplexe elektromechanische Reparaturen an Hydraulik- und Kraftstoffsystemen. Sensor- und Antriebsdiagnose (ABS usw.). Einhaltung europäischer Straßenverkehrssicherheitsstandards. DFMAS-Prinzipien angewendet.", "tags": ["Hydraulik","Diagnose","DFMAS"] }
+    ],
+    "eduItems": [
+      { "icon": "🎓", "degree": "MSc. Interdisciplinary Computing", "school": "IT-U Austria · Spezialisierung: Future Industries", "year": "Okt 2025 – laufend", "desc": "Digitale Zwillinge, Industrielles IoT, Systemarchitektur, Maschinelles Lernen, Agiles Produktmanagement." },
+      { "icon": "📚", "degree": "The Non-Verbal Brain", "school": "ELTE Budapest Summer University, PPK", "year": "Jul 2025", "badge": "5 ECTS", "desc": "Neurowissenschaften, Wahrnehmung, Gedächtnis, Kreativität, Bewusstseinsstudien, Experimentelle Psychologie" },
+      { "icon": "🏛️", "degree": "BSc. Maschinenbau", "school": "Eötvös-Loránd-Universität (ELTE), Ungarn", "year": "Sep 2021 – Jan 2025", "badge": "GPA 4,61 / 5,0 · Abschluss mit Auszeichnung", "desc": "FEA, Mechatronik, Hydraulik & Pneumatik, Thermodynamik, Fertigungssysteme, Werkstoffcharakterisierung." }
+    ]
+  },
+  "about_page": {
+    "heroTitle": "Ingenieur.<br><em>Denker.</em><br>Macher.",
+    "heroP1": "Ich bin Bishoy – ein multidisziplinärer Ingenieur, angetrieben von echter Neugier darauf, wie Dinge funktionieren und wie sie verbessert werden können. Ich gedeihe an der Schnittstelle von mechanischer Präzision, Berechnungsmethoden und moderner Automatisierung.",
+    "heroP2": "Derzeit absolviere ich meinen MSc in Interdisciplinary Computing (Future Industries) in Linz, nachdem ich meinen BSc in Maschinenbau an der ELTE Ungarn mit Auszeichnung und dem Fakultätspreis für herausragende Studenten abgeschlossen habe.",
+    "heroP3": "Mein Ziel: technische Tiefe mit einem proaktiven, anpassungsfähigen Mindset verbinden – nachhaltige, digitalisierte Ingenieurlösungen für Hightech-Industrien liefern.",
+    "values": [
+      { "title": "🎯 Präzisionsorientiert", "desc": "Ingenieurentscheidungen auf Basis von Daten, Simulation und Normen - von GD&T bis FEA-Konvergenzstudien." },
+      { "title": "🔗 Systemdenken", "desc": "Ich sehe Produkte als Systeme - vom Design über Fertigung und Qualität bis zum Lebensende." },
+      { "title": "🚀 Immer am Lernen", "desc": "Von Digitalen Zwillingen über ROS2-Robotik bis zur 5-Achs-additiven Fertigung - ich erschließe ständig neue technische Gebiete." }
+    ],
+    "langsEyebrow": "Sprachen",
+    "langs": [
+      { "name": "Arabisch", "level": "Muttersprache", "pct": 95 },
+      { "name": "Englisch", "level": "C1 - Geschäftsniveau", "pct": 85 },
+      { "name": "Deutsch", "level": "A2 - lerne intensiv", "pct": 27 },
+      { "name": "Ungarisch", "level": "Konversation", "pct": 32 }
+    ],
+    "awardsEyebrow": "Auszeichnungen",
+    "awards": [
+      { "icon": "🏅", "title": "Herausragender Studentenpreis der Fakultät - ELTE Ungarn", "desc": "Verliehen an Spitzenstudierende für hohe GPA und Beiträge zur Fakultätsforschung. Basierend auf akademischer Exzellenz und Fakultätsnominierungen." },
+      { "icon": "🏆", "title": "3. Platz - TDK Wissenschaftliche Studentenkonferenz", "desc": "Ausgezeichnet für selbstständige Forschung zur Fertigungsoptimierung von Medizinprodukten. Entwickelte Workflows zur Sicherstellung der ISO 13485 und EU-MDR Konformität." }
+    ]
+  },
+  "resume_page": {
+    "eyebrow": "Dokumente",
+    "title": "Lebenslauf & CV",
+    "desc": "Laden Sie meinen vollständigen Lebenslauf herunter oder sehen Sie ihn direkt unten ein. Zuletzt aktualisiert Februar 2026.",
+    "cvTitle": "Bishoy Labib - Vollständiger Lebenslauf",
+    "cvMeta": "Zuletzt aktualisiert · Feb 2026 · PDF",
+    "downloadBtn": "⬇ PDF herunterladen",
+    "noPdfMsg": "Ihr Browser unterstützt keine eingebetteten PDFs.",
+    "noPdfLink": "Laden Sie den Lebenslauf hier herunter."
+  },
+  "contact_page": {
+    "formTitle": "Nachricht senden",
+    "formDesc": "Haben Sie ein Projekt, eine Stelle oder eine Frage? Füllen Sie das Formular aus und ich melde mich innerhalb von 24 Stunden.",
+    "labelName": "Vollständiger Name",
+    "placeholderName": "Ihr Name",
+    "labelEmail": "E-Mail",
+    "placeholderEmail": "ihre@email.com",
+    "labelSubject": "Betreff",
+    "placeholderSubject": "Worum geht es?",
+    "labelMessage": "Nachricht",
+    "placeholderMessage": "Erzählen Sie mir von Ihrem Projekt oder Ihrer Stelle...",
+    "sendBtn": "Nachricht senden →",
+    "bigText": "Lassen Sie uns gemeinsam etwas <em>Großartiges</em> aufbauen.",
+    "subText": "Wohnhaft in Linz, Österreich. Offen für Stellen in Ingenieurwesen, Forschung und Hightech-Branchen weltweit.",
+    "linkEmail": "E-Mail",
+    "linkPhone": "Telefon",
+    "linkLinkedIn": "LinkedIn",
+    "linkGitHub": "GitHub",
+    "linkPortfolio": "Portfolio-Website"
+  },
+  "project_ui": {
+    "backBtn": "← Zurück zu Projekten",
+    "techStackLabel": "Tech Stack",
+    "discussBtn": "Projekt besprechen →",
+    "galleryLabel": "Galerie",
+    "overviewLabel": "Projektübersicht",
+    "overviewH2": "Projektübersicht"
+  },
+  "projects": [
+    {
+      "id": "p0",
+      "file": "project-p0.html",
+      "title": "Ingenieur-Notizbuch",
+      "date": "2021 – 2025",
+      "sidebar": {
+        "period": "2021 – 2025",
+        "type": "Gemischt / Praktisch",
+        "domains": ["Maschinenbau", "Elektronik", "Werkstatt", "Labor", "Zeichnen"]
+      },
+      "cardTags": ["Maschinenbau","Laborarbeit","Gemischt"],
+      "cardDesc": "Keine Einzelprojekt - eine Sammlung von Momenten, jeder mit seiner eigenen Geschichte. Praktische Arbeit, technische Zeichnungen, Laborversuche usw.",
+      "heroTags": ["Maschinenbau","Laborarbeit"],
+      "h1": "Ingenieur-Notizbuch",
+      "overviewH2": "Projektübersicht",
+      "overview": "Eine kuratierte Sammlung verschiedener praktischer Ingenieurtätigkeiten aus akademischen und beruflichen Aktivitäten. Dieses Notizbuch zeigt die Bandbreite praktischer Fähigkeiten - von Werkstattbearbeitung und Maschinenmontage bis zu Elektroniklaborversuchen, technischem Zeichnen und Komponentenprüfung.",
+      "bulletsH2": "Inhalt",
+      "bullets": [
+        "Montage und Demontage von Maschinenbauteilen (Kolben, Pleuel, Zahnradsysteme).",
+        "Von Hand gezeichnete technische Zeichnungen mit korrekter Projektion und Bemaßung.",
+        "Elektronik-Steckbrettversuche und Schaltkreismessungen.",
+        "Werkstattbearbeitung, Teileprüfung und Werkzeughandhabung.",
+        "Verschiedene Laborpraktika zu Maschinenelementen, Werkstoffen und Fertigungsprozessen."
+      ],
+      "techStack": ["Maschinenbau","Elektronik","Werkstatt","Hand- & Elektrowerkzeuge","Labor","Technisches Zeichnen"]
+    },
+    {
+      "id": "p1",
+      "file": "project-p1.html",
+      "title": "Digitaler Zwilling & Robotikintegration (Industrie 5.0)",
+      "date": "2024",
+      "sidebar": {
+        "period": "2024",
+        "type": "Forschung / Digitaler Zwilling",
+        "domains": ["Robotik", "ROS2", "Digitaler Zwilling"]
+      },
+      "cardTags": ["Robotik","ROS2","Digitaler Zwilling"],
+      "cardDesc": "Synchronisierte Digital-Twin-Pipeline für den SO-100-Roboter, die Fusion 360 CAD mit ROS2-Bewegungsplanung über Unity und NVIDIA Isaac Sim verbindet.",
+      "heroTags": ["ROS2","Digitaler Zwilling"],
+      "h1": "Digitaler Zwilling & Robotikintegration",
+      "overviewH2": "Projektübersicht",
+      "overview": "Entwicklung einer vollständigen Digital-Twin-Pipeline für den SO-100 Open-Source-Roboterarm, die CAD-Design direkt in Echtzeitsimulations- und Bewegungsplanungsumgebungen überführt. Der Workflow umfasst Fusion 360 URDF-Export, ROS2-Integration, Unity-Visualisierung und NVIDIA Isaac Sim-Validierung.",
+      "bulletsH2": "Wichtigste Beiträge",
+      "bullets": [
+        "Benutzerdefinierter Fusion 360 URDF/XACRO-Exporter - automatisierte Gelenk- und Netzextraktion.",
+        "ROS2 Humble-Integration mit MoveIt2 für inverse Kinematik und Bahnplanung.",
+        "Unity-basierter Echtzeit-Digitaler Zwilling mit ROS2 TCP Connector.",
+        "NVIDIA Isaac Sim HIL-Validierung und Sim-to-Real-Lückenanalyse.",
+        "Python-Toolchain für URDF-Nachverarbeitung und Netzoptimierung."
+      ],
+      "techStack": ["ROS2","URDF","Fusion 360","Unity","Isaac Sim","Python"]
+    },
+    {
+      "id": "p2",
+      "file": "project-p2.html",
+      "title": "Benutzerdefinierte 5-Achs-Slice-Engine",
+      "date": "2024",
+      "sidebar": {
+        "period": "2024",
+        "type": "Software / Additive Fertigung",
+        "domains": ["Additive Fertigung", "Python", "5-Achs"]
+      },
+      "cardTags": ["Additive Fertigung","Python","5-Achs"],
+      "cardDesc": "Benutzerdefinierte Slice-Logik für nichtlineare 5-Achs-Werkzeugpfade jenseits von 3-Achs-Beschränkungen, verbesserte mechanische Eigenschaften und reduzierte Stützstrukturen.",
+      "heroTags": ["5-Achs","Python"],
+      "h1": "Benutzerdefinierte 5-Achs-Slice-Engine",
+      "overviewH2": "Projektübersicht",
+      "overview": "Entwicklung einer benutzerdefinierten 5-Achs-Slice-Engine von Grund auf, die nichtplanare und nichtlineare Werkzeugpfaderzeugung für FDM-3D-Druck ermöglicht. Die Engine unterstützt kontinuierliche Faserverstärkungsstrategien und eliminiert Stützstrukturen bei komplexen Geometrien.",
+      "bulletsH2": "Wichtigste Beiträge",
+      "bullets": [
+        "Benutzerdefinierter Werkzeugpfad-Generierungsalgorithmus für 5-Achs-FDM-Druck.",
+        "Nichtplanare Schichtberechnung mit Flächennormalenverfolgung.",
+        "G-Code-Postprozessor kompatibel mit Mehrachs-Bewegungssteuerungen.",
+        "Faserpfadoptimierung für kontinuierliche Kohlenstofffaserverstärkung.",
+        "Perl-basierter Geometriekern mit Python-Frontend zur Pfadvalidierung."
+      ],
+      "techStack": ["Python","Perl","G-Code","FDM","CAM"]
+    },
+    {
+      "id": "p3",
+      "file": "project-p3.html",
+      "title": "Tiefziehen FEA",
+      "date": "Mai 2024",
+      "sidebar": {
+        "period": "Mai 2024",
+        "type": "Simulation / FEA",
+        "domains": ["FEA", "ANSYS", "Strukturanalyse"]
+      },
+      "cardTags": ["FEA","ANSYS","Strukturanalyse"],
+      "cardDesc": "Im Rahmen des Kurses Nichtlineare FEM simulierte ich einen Tiefziehprozess mit Explicit Dynamics, um das Materialverhalten unter hohen Dehnungsbedingungen vorherzusagen.",
+      "heroTags": ["FEA","ANSYS"],
+      "h1": "Fertigungsvalidierung & FEA",
+      "overviewH2": "Projektübersicht",
+      "overview": "Finite-Elemente-Analyse eines Tiefzieh-Fertigungsprozesses mit ANSYS Explicit Dynamics. Die Studie konzentrierte sich auf die Vorhersage von Blechverformung, Spannungsverteilung und Versagensformen unter großen Dehnungsumformbedingungen.",
+      "bulletsH2": "Wichtigste Arbeiten",
+      "bullets": [
+        "ANSYS Explicit Dynamics Modellaufbau für Tiefziehsimulation.",
+        "Werkstoffmodellkalibrierung mit experimentellen Spannungs-Dehnungs-Daten.",
+        "Vorhersage von Faltenbildung und Rissen bei variierenden Niederhalterdrücken.",
+        "Netzempfindlichkeitsanalyse und Konvergenzvalidierung.",
+        "Vergleich mit analytischen Lösungen und experimentellen Referenzdaten."
+      ],
+      "techStack": ["ANSYS Mechanical","ANSYS ExplicitDynamics","Nichtlineare FEM","FEA","Tiefziehen"]
+    },
+    {
+      "id": "p5",
+      "file": "project-p5.html",
+      "title": "Erweiterte Messsysteme & Metrologie",
+      "date": "2024–25",
+      "sidebar": {
+        "period": "2024–25",
+        "type": "Metrologie / Qualität",
+        "domains": ["Metrologie", "Qualität", "KMG"]
+      },
+      "cardTags": ["Metrologie","Qualität","KMG"],
+      "cardDesc": "Programmierung und Verwaltung von Roboterarmen, VMMs, KMGs und 3D-optischen Scansystemen für Hochpräzisionsprüfung bei ZALNER.",
+      "heroTags": ["Metrologie","KMG"],
+      "h1": "Erweiterte Messsysteme & Metrologie",
+      "overviewH2": "Projektübersicht",
+      "overview": "Praktische Metrologie-Arbeit bei ZALNER Engineering mit KMG-, VMM-, Roboterprüfarm- und 3D-optischen Scansystemen. Fokus auf hochpräzise Maßprüfung, GD&T-Auswertung und Messsystemanalyse für Automobil- und Präzisionsfertigungskunden.",
+      "bulletsH2": "Wichtigste Beiträge",
+      "bullets": [
+        "KMG-Programmierung in DMIS und ZEISS Inspect für komplexe prismatische und Freiformbauteile.",
+        "3D-Scan-Workflows mit GOM und PolyWorks für Reverse Engineering und Prüfung.",
+        "Messsystemanalyse (MSA) - Gauge R&R-Studien für Produktionslinien.",
+        "GD&T-Auswertung und Berichterstattung nach ASME Y14.5 und ISO GPS.",
+        "Werkzeugvoreinstellerkalibrierung und Retrofit bei Heilig GmbH."
+      ],
+      "techStack": ["ZEISS Inspect","GOM","PolyWorks","DMIS","3D-Scanning"]
+    },
+    {
+      "id": "p6",
+      "file": "project-p6.html",
+      "title": "Fahrzeugwartung",
+      "date": "2023 – 2025",
+      "sidebar": {
+        "period": "2023 – 2025",
+        "type": "Praktische Erfahrung",
+        "domains": ["Instandhaltung", "Diagnose", "Maschinenbau"]
+      },
+      "cardTags": ["IATF 16949","PPAP","Qualität"],
+      "cardDesc": "PPAP, APQP, SPC und 8D-Qualitätsingenieurwesen in einem IATF 16949-zertifizierten Automobilzuliefererumfeld.",
+      "heroTags": ["IATF 16949","PPAP"],
+      "h1": "Automotive-Qualitätsingenieurwesen",
+      "overviewH2": "Projektübersicht",
+      "overview": "Qualitätsingenieurwesen in einem IATF 16949-zertifizierten Automobilzuliefererumfeld bei ZALNER Engineering. Verantwortlichkeiten umfassten PPAP-Einreichungen, APQP-Planung, statistische Prozesskontrolle und 8D-Problemlösung für Präzisionsbauteile.",
+      "bulletsH2": "Wichtigste Beiträge",
+      "bullets": [
+        "PPAP Level 3-Einreichungen - vollständige Dokumentation inkl. PFMEA, Kontrollpläne und MSA.",
+        "SPC-Diagrammmanagement und Cpk-Analyse für kritische Maße.",
+        "8D-Problemlösungsberichte für Kundenbeanstandungen und interne Nichtkonformitäten.",
+        "APQP-Projektkoordination von der Designüberprüfung bis zur Produktionsvalidierung.",
+        "Interne Auditunterstützung unter IATF 16949."
+      ],
+      "techStack": ["PPAP/APQP","SPC","8D-Bericht","IATF 16949","GD&T"]
+    },
+    {
+      "id": "p7",
+      "file": "project-p7.html",
+      "title": "Optimierung der Medizinprodukt-Fertigungstechnologie",
+      "date": "Dez 2024",
+      "sidebar": {
+        "period": "Dez 2024",
+        "type": "Thesis / Medizinprodukt",
+        "domains": ["Medizinprodukte", "ISO 13485", "CNC"]
+      },
+      "cardTags": ["Medizinprodukte","EU-MDR","ISO 13485","CNC"],
+      "cardDesc": "Bachelorarbeit - Optimierung der Kieferorthopädie-Zangenfertigung mit CAD/CAM/CAE unter EU-MDR- und ISO 13485-Konformität. TDK 3. Platz.",
+      "heroTags": ["Medizinprodukte","ISO 13485"],
+      "h1": "Optimierung der Medizinprodukt-Fertigungstechnologie",
+      "overviewH2": "Projektübersicht",
+      "overview": "Bachelorarbeit zur Optimierung des Herstellungsprozesses kieferorthopädischer Zangen bei Mobilinter Kft. Das Projekt kombinierte CAD-Redesign, 5-Achs-CNC-CAM-Programmierung und FEA-Strukturvalidierung zur Verbesserung der Fertigungseffizienz unter voller EU-MDR 2017/745 und ISO 13485 Konformität.",
+      "bulletsH2": "Wichtigste Arbeiten",
+      "bullets": [
+        "CAD-Redesign der Zangengeometrie in Fusion 360 für verbesserte Fertigbarkeit.",
+        "5-Achs-CNC-CAM-Programmierung und Spannvorrichtungsdesign für komplexe Freiformflächen.",
+        "FEA-Strukturanalyse - Spannungen, Verformung und Ermüdungslebensdauer.",
+        "Gesenkschmiedebarkeitsstudie nach DIN EN 10243.",
+        "Vollständiges Regulierungsdokumentationspaket - EU-MDR und ISO 13485 konform."
+      ],
+      "techStack": ["CAD","CAM","FEA","ISO 13485","EU-MDR","CNC"]
+    },
+    {
+      "id": "p8",
+      "file": "project-p8.html",
+      "title": "Schrittmotorsteuerung",
+      "date": "2023–24",
+      "sidebar": {
+        "period": "2023–24",
+        "type": "Elektronik / Embedded",
+        "domains": ["Elektronik", "Embedded", "PCB"]
+      },
+      "cardTags": ["Elektronik","Embedded","PCB"],
+      "cardDesc": "Entwurf und Aufbau einer Schrittmotorsteuerung - PCB-Design, Firmware-Entwicklung und mechanische Integration für positionsgeregelte Aktuatoren.",
+      "heroTags": ["Elektronik","Embedded"],
+      "h1": "Schrittmotorsteuerung",
+      "overviewH2": "Projektübersicht",
+      "overview": "Vollständiger Entwurf und Aufbau einer Schrittmotorsteuerplatine - von Schaltplanerstellung und PCB-Layout über Firmware-Entwicklung in Embedded C bis zu physischem Aufbau und Tests. Das System ermöglicht präzise Positions- und Drehzahlregelung für einen NEMA-17-Schrittmotor.",
+      "bulletsH2": "Wichtigste Arbeiten",
+      "bullets": [
+        "Schaltplanentwurf und PCB-Layout in KiCad - 2-Lagen-Platine mit DRV8825-Treiber.",
+        "Firmware in Embedded C - Schritt-/Richtungssteuerung mit Beschleunigungsprofilen.",
+        "Geschlossener Regelkreis mit optischem Encoder-Feedback.",
+        "Mechanisches Gehäusedesign und Integration mit Aktor-Baugruppe.",
+        "Tests und Validierung - Schrittgenauigkeit, Drehzahlrampe und Wärmecharakterisierung."
+      ],
+      "techStack": ["PCB-Design","Firmware","Motorsteuerung","Embedded C"]
+    },
+    {
+      "id": "p9",
+      "file": "project-p9.html",
+      "title": "Fahrzeugwartung",
+      "date": "2023–25",
+      "sidebar": {
+        "period": "2023–25",
+        "type": "Werkstatt / Automotive",
+        "domains": ["Automotive", "Mechanik", "Werkstatt"]
+      },
+      "cardTags": ["Automotive","Maschinenbau","Werkstatt"],
+      "cardDesc": "Praktische Fahrzeuginspektion inkl. Motor, Bremsen, Fahrwerk und Antrieb - Diagnose und mechanische Reparatur in einer echten Werkstatt.",
+      "heroTags": ["Automotive","Maschinenbau"],
+      "h1": "Fahrzeugwartung",
+      "overviewH2": "Projektübersicht",
+      "overview": "Praktische Fahrzeugwartung und mechanische Instandhaltung: Diagnose, Komponentenprüfung, Demontage/Montage und systemübergreifende Fehlersuche in einem realen Werkstattumfeld.",
+      "bulletsH2": "Wichtigste Arbeiten",
+      "bullets": [
+        "Demontage, Prüfung und Montage von Motor- und Antriebsstrangkomponenten.",
+        "Bremssystemwartung - Bremsbeläge, -scheiben, -sättel und Bremsflüssigkeit.",
+        "Prüfung und Einstellung von Fahrwerk- und Lenkungskomponenten.",
+        "Diagnoseverfahren und Fehleridentifikation an mechanischen Systemen.",
+        "Flüssigkeitswartung - Motoröl, Kühlmittel, Getriebe und Servolenkung."
+      ],
+      "techStack": ["Automotive","Diagnose","Motor","Bremsen","Fahrwerk"]
+    },
+    {
+      "id": "p10",
+      "file": "project-p10.html",
+      "title": "Werkzeugvoreinstellerretrofit",
+      "date": "2024–25",
+      "sidebar": {
+        "period": "2024–25",
+        "type": "Metrologie / Retrofit",
+        "domains": ["Metrologie", "Kalibrierung", "CNC"]
+      },
+      "cardTags": ["Metrologie","Kalibrierung","CNC"],
+      "cardDesc": "Vollständige mechanische Überholung und Kalibrierung eines Werkzeugvoreinstellgeräts auf Präzisionsmetrologie-Standard für CNC-Werkzeugmessung.",
+      "heroTags": ["Metrologie","Präzision"],
+      "h1": "Werkzeugvoreinstellerretrofit",
+      "overviewH2": "Projektübersicht",
+      "overview": "Vollständiger mechanischer Retrofit und Neukalibrierung eines veralteten Werkzeugvoreinstellgeräts bei Heilig GmbH. Das Projekt umfasste Demontage, vollständige mechanische Überholung, geometrische Neuausrichtung und Kalibrierung nach rückverfolgbaren Metrologiestandards für CNC-Werkzeugversatzmessung.",
+      "bulletsH2": "Wichtigste Arbeiten",
+      "bullets": [
+        "Vollständige Demontage und mechanische Prüfung aller kinematischen Komponenten.",
+        "Präzisionsgeometrische Neuausrichtung der Messachsen und Bezugsflächen.",
+        "Kalibrierung gegen rückverfolgbare Referenzartefakte - Länge, Durchmesser, Rundlauf.",
+        "Messunsicherheitsanalyse und Kalibrierzertifikaterstellung.",
+        "Bedienerschulung und Dokumentation der Wartungsverfahren."
+      ],
+      "techStack": ["Metrologie","Kalibrierung","CNC","MSA","Qualität"]
+    },
+    {
+      "id": "p11",
+      "file": "project-p11.html",
+      "title": "Werkstoffcharakterisierung",
+      "date": "2022–25",
+      "sidebar": {
+        "period": "2022–25",
+        "type": "Labor / Werkstoffe",
+        "domains": ["Werkstoffe", "Prüfung", "Mikroskopie"]
+      },
+      "cardTags": ["Werkstoffe","Prüfung","Mikroskopie"],
+      "cardDesc": "Mechanische Prüfung, Mikrostrukturanalyse und Eigenschaftsbewertung von Konstruktionswerkstoffen - Zug, Härte, Schlag und Schadensanalyse.",
+      "heroTags": ["Werkstoffe","Prüfung"],
+      "h1": "Werkstoffcharakterisierung",
+      "overviewH2": "Projektübersicht",
+      "overview": "Systematische Charakterisierung von Konstruktionswerkstoffen durch mechanische Prüfung und Mikrostrukturanalyse. Arbeiten umfassen Zugversuche, Härtemessung, Schlagprüfung und Schadensanalyse an Metallen, Polymeren und Verbundwerkstoffen.",
+      "bulletsH2": "Wichtigste Arbeiten",
+      "bullets": [
+        "Zugversuche - Spannungs-Dehnungskurvenerfassung und Eigenschaftsextraktion (UTS, YS, Dehnung).",
+        "Vickers- und Brinell-Härteprüfung unter verschiedenen Werkstoffzuständen.",
+        "Charpy-Schlagversuche für Zähigkeit und Duktil-Spröd-Übergang.",
+        "Optische und REM-Mikrostrukturanalyse - Korngröße, Phasenidentifikation, Bruchfläche.",
+        "Schadensanalyseberichte mit Ursachenidentifikation."
+      ],
+      "techStack": ["Werkstoffwissenschaft","Mechanische Prüfung","Metallurgie","Mikroskopie","Schadensanalyse"]
+    },
+    {
+      "id": "p12",
+      "file": "project-p12.html",
+      "title": "FEM & Simulationsstudien",
+      "date": "2022–25",
+      "sidebar": {
+        "period": "2022–25",
+        "type": "Simulation / FEM",
+        "domains": ["FEM", "ANSYS", "Simulation"]
+      },
+      "cardTags": ["FEM","ANSYS","Simulation"],
+      "cardDesc": "Eine Sammlung struktureller, thermischer, dynamischer und nichtlinearer FEM-Simulationen aus dem Ingenieurstudium - Bilder & Animationen.",
+      "heroTags": ["FEM","ANSYS"],
+      "h1": "FEM & Simulationsstudien",
+      "overviewH2": "Projektübersicht",
+      "overview": "Eine kuratierte Sammlung von Finite-Elemente-Methoden- und Simulationsstudien aus dem Maschinenbau-Studium. Deckt statisch-strukturale, modale, thermische, Explicit-Dynamics- und nichtlineare Analysen mit ANSYS Mechanical, ANSYS Explicit Dynamics, MATLAB und Abaqus ab.",
+      "bulletsH2": "Behandelte Themen",
+      "bullets": [
+        "Statisch-strukturale Analyse - Spannungen, Verformung, Ermüdung unter verschiedenen Belastungen.",
+        "Modal- und Harmonische Analyse - Eigenfrequenzen und Resonanzbewertung.",
+        "Thermische Analyse - Wärmeübertragung, Wärmespannung und Gradientenkartierung.",
+        "Explicit Dynamics - Umformen bei hoher Dehnrate, Aufprall- und Crashsimulationen.",
+        "Nichtlineare FEM - Große Verformung, Kontaktmechanik, Materialnichtlinearität."
+      ],
+      "techStack": ["ANSYS","Mechanical","FEM","MATLAB","Abaqus"]
+    }
+  ]
+}

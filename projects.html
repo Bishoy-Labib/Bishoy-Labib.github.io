@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page-projects">
 
     <div class="cursor" id="cursor"></div>
     <div class="cursor-ring" id="cursorRing"></div>
@@ -21,23 +21,21 @@
     <nav>
         <a class="nav-logo" href="index.html">BL<span>.</span></a>
         <ul class="nav-links">
-            <li><a href="index.html" id="nav-home">Home</a></li>
-            <li><a href="projects.html" id="nav-projects">Projects</a></li>
-            <li><a href="experience.html" id="nav-experience">Edu &amp; Experience</a></li>
-            <li><a href="resume.html" id="nav-resume">Résumé</a></li>
-            <li><a href="about.html" id="nav-about">About</a></li>
-            <li><a href="contact.html" id="nav-contact" class="nav-cta">Contact</a></li>
-        </ul>
+            <li><a href="index.html" id="nav-home" data-i18n="nav.home">Home</a></li>
+            <li><a href="projects.html" id="nav-projects" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="experience.html" id="nav-experience" data-i18n="nav.experience">Edu &amp; Experience</a></li>
+
+            <li><a href="contact.html" id="nav-contact" class="nav-cta" data-i18n="nav.contact">Contact</a></li>
+        <div class="lang-switcher"><button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button><button class="lang-btn" data-lang="de" onclick="setLang('de')">DE</button></div>
     </nav>
 
     <!-- ═══ PROJECTS GRID ══════════════════════════════════════════════════════ -->
     <div id="page-projects-grid" class="page active" style="margin-top:var(--nav-h);">
         <section class="section">
-            <div class="section-eyebrow">Portfolio</div>
-            <h2 class="section-title">Research &amp; Engineering<br>Projects</h2>
-            <p class="section-desc">Hands-on projects spanning digital twins, additive manufacturing, structural
+            <div class="section-eyebrow projects-eyebrow" data-i18n="projects_page.eyebrow">Portfolio</div>
+            <h2 class="section-title projects-title" data-i18n="projects_page.title">Research &amp; Engineering<br>Projects</h2>
+            <p class="section-desc projects-desc" data-i18n="projects_page.desc1">Hands-on projects spanning digital twins, additive manufacturing, structural
                 analysis, and medical device optimization.</p>
-
             <div class="projects-grid">
 
                 <div class="project-card reveal reveal-delay-1"
@@ -56,19 +54,19 @@
                             <span class="project-tag">Mixed</span>
                         </div>
                         <div class="project-title">Engineering Notebook</div>
-                        <p class="project-desc">A curated collection of hands-on engineering work — spanning mechanical
-                            components, technical drawings, lab experiments, and workshop activities.</p>
+                        <p class="project-desc">This isn’t just a single project; it’s a collection of moments, each
+                            with its own story. Hands-on work, technical drawings, lab experiments, etc.</p>
                     </div>
                     <div class="project-footer">
                         <span class="project-footer-link">Explore Project →</span>
-                        <span class="project-year">2022–25</span>
+                        <span class="project-year">2021–25</span>
                     </div>
                 </div>
 
                 <div class="project-card reveal reveal-delay-2"
                     onclick="window.location.href='projects/project-p1.html'">
                     <div class="project-img-placeholder" style="background:linear-gradient(135deg,#1a3a5c,#2e5c8a);">
-                        🤖
+                        <img src="../images/DigitalTwin/IMG1.png" alt="IMG 1" loading="lazy">
                         <div class="project-img-overlay">
                             <div class="project-view-btn">View Details →</div>
                         </div>
@@ -80,8 +78,8 @@
                             <span class="project-tag blue">Digital Twin</span>
                         </div>
                         <div class="project-title">Digital Twin &amp; Robotics Integration (Industry 5.0)</div>
-                        <p class="project-desc">Synchronized digital twin pipeline for the SO-100 robot, bridging Fusion
-                            360 CAD with ROS2 motion planning via Unity and NVIDIA Isaac Sim.</p>
+                        <p class="project-desc">Synchronized digital twin pipeline for the Robotics, bridging Fusion
+                            360 CAD with URDF via Unity and Later with ROS2 and NVIDIA Isaac Sim.</p>
                     </div>
                     <div class="project-footer">
                         <span class="project-footer-link">Explore Project →</span>
@@ -89,29 +87,6 @@
                     </div>
                 </div>
 
-                <div class="project-card reveal reveal-delay-3"
-                    onclick="window.location.href='projects/project-p2.html'">
-                    <div class="project-img-placeholder" style="background:linear-gradient(135deg,#2d1a0e,#6b3318);">
-                        🖨️
-                        <div class="project-img-overlay">
-                            <div class="project-view-btn">View Details →</div>
-                        </div>
-                    </div>
-                    <div class="project-body">
-                        <div class="project-tags">
-                            <span class="project-tag">Additive Mfg.</span>
-                            <span class="project-tag blue">Python</span>
-                            <span class="project-tag">5-Axis</span>
-                        </div>
-                        <div class="project-title">Custom 5-Axis Slicing Engine</div>
-                        <p class="project-desc">Custom slicing logic enabling non-linear 5-axis toolpaths beyond 3-axis
-                            constraints, improving mechanical properties and reducing support structures.</p>
-                    </div>
-                    <div class="project-footer">
-                        <span class="project-footer-link">Explore Project →</span>
-                        <span class="project-year">2024</span>
-                    </div>
-                </div>
 
                 <div class="project-card reveal reveal-delay-4"
                     onclick="window.location.href='projects/project-p3.html'">
@@ -128,13 +103,14 @@
                             <span class="project-tag">ANSYS</span>
                             <span class="project-tag blue">Structural</span>
                         </div>
-                        <div class="project-title">Manufacturing Validation &amp; FEA</div>
-                        <p class="project-desc">Explicit Dynamics simulation of deep drawing operations and Eurocode 3
-                            structural compliance verification for large-scale steel structures.</p>
+                        <div class="project-title">Deep Drawing FEA</div>
+                        <p class="project-desc">As part of the Non-Linear Finite Element Methods course, I simulated a
+                            deep drawing process using Explicit Dynamics to predict material behavior under high-strain
+                            conditions.</p>
                     </div>
                     <div class="project-footer">
                         <span class="project-footer-link">Explore Project →</span>
-                        <span class="project-year">2023–24</span>
+                        <span class="project-year">May 2024</span>
                     </div>
                 </div>
 
@@ -153,13 +129,14 @@
                             <span class="project-tag blue">ISO 13485</span>
                             <span class="project-tag">CNC</span>
                         </div>
-                        <div class="project-title">Medical Device Manufacturing Optimization</div>
-                        <p class="project-desc">Bachelor's thesis — optimization of orthodontic plier manufacturing via
+                        <div class="project-title">Optimization of Medical Device Manufacturing Technology</div>
+                        <p class="project-desc">Bachelor's thesis - optimization of orthodontic plier manufacturing
+                            utilizing
                             CAD/CAM/CAE, ensuring EU MDR and ISO 13485 compliance. TDK 3rd Place.</p>
                     </div>
                     <div class="project-footer">
                         <span class="project-footer-link">Explore Project →</span>
-                        <span class="project-year">2024</span>
+                        <span class="project-year">Dec 2024</span>
                     </div>
                 </div>
 
@@ -203,7 +180,7 @@
                             <span class="project-tag blue">Embedded</span>
                             <span class="project-tag">PCB</span>
                         </div>
-                        <div class="project-title">Stepper Motor Controller</div>
+                        <div class="project-title">Bipolar Stepper Motor Controller</div>
                         <p class="project-desc">Design and build of a stepper motor controller &mdash; PCB design,
                             firmware
                             development, and mechanical integration for position-controlled actuation.</p>
@@ -329,6 +306,7 @@
             <a href="contact.html">Contact</a>
         </div>
     </footer>
+    <script src="js/i18n.js"></script>
 
     <script src="js/script.js"></script>
 </body>

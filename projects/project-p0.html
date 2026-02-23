@@ -1,207 +1,174 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engineering Notebook — Bishoy Labib</title>
-    <meta name="description"
-        content="A curated collection of hands-on engineering work — mechanical components, technical drawings, lab experiments, and workshop activities.">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/lightbox.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Engineering Notebook - Bishoy Labib</title>
+        <meta name="description"
+                content="A curated collection of hands-on engineering work - mechanical components, technical drawings, lab experiments, and workshop activities.">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600;700&display=swap"
+                rel="stylesheet">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/lightbox.css">
 </head>
 
-<body>
+<body class="page-project" data-project-id="31412">
 
-    <div class="cursor" id="cursor"></div>
-    <div class="cursor-ring" id="cursorRing"></div>
+        <div class="cursor" id="cursor"></div>
+        <div class="cursor-ring" id="cursorRing"></div>
 
-    <nav>
-        <a class="nav-logo" href="../index.html">BL<span>.</span></a>
-        <ul class="nav-links">
-            <li><a href="../index.html" id="nav-home">Home</a></li>
-            <li><a href="../projects.html" id="nav-projects">Projects</a></li>
-            <li><a href="../experience.html" id="nav-experience">Edu &amp; Experience</a></li>
-            <li><a href="../resume.html" id="nav-resume">Résumé</a></li>
-            <li><a href="../about.html" id="nav-about">About</a></li>
-            <li><a href="../contact.html" id="nav-contact" class="nav-cta">Contact</a></li>
-        </ul>
+        <nav>
+                <a class="nav-logo" href="../index.html">BL<span>.</span></a>
+                <ul class="nav-links">
+                        <li><a href="../index.html" id="nav-home">Home</a></li>
+                        <li><a href="../projects.html" id="nav-projects">Projects</a></li>
+                        <li><a href="../experience.html" id="nav-experience">Edu &amp; Experience</a></li>
+
+                        <li><a href="../contact.html" id="nav-contact" class="nav-cta">Contact</a></li>
+        <div class="lang-switcher"><button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button><button class="lang-btn" data-lang="de" onclick="setLang('de')">DE</button></div>
     </nav>
 
-    <!-- Lightbox overlay -->
+        <!-- Lightbox overlay -->
 
-    <!-- Unified Media Lightbox -->
-    <div id="lb" onclick="LB.outside(event)" role="dialog" aria-modal="true">
-        <span id="lb-counter"></span>
-        <span id="lb-type-badge">VIDEO</span>
-        <button id="lb-close"  onclick="LB.close()" title="Close">&#x2715;</button>
-        <button class="lb-arrow" id="lb-prev" onclick="LB.step(-1)">&#8592;</button>
-        <div id="lb-media-wrap">
-            <img   id="lb-img" src="" alt="" draggable="false">
-            <video id="lb-vid" controls autoplay playsinline></video>
-        </div>
-        <button class="lb-arrow" id="lb-next" onclick="LB.step(1)">&#8594;</button>
-    </div>
-<div class="page active" style="margin-top: var(--nav-h);">
-        <a class="back-btn" href="../projects.html">&#8592; Back to Projects</a>
-
-        <div class="project-detail-hero" style="background:#111;margin-top:0;position:relative;overflow:hidden;">
-            <img src="../images/unlisted/IMG1.jpg" alt="Engineering Notebook"
-                style="width:100%;height:100%;object-fit:cover;opacity:.6;position:absolute;inset:0;">
-            <div class="project-detail-hero-overlay"></div>
-            <div class="project-detail-hero-content" style="position:relative;z-index:2;">
-                <div class="project-tags" style="margin-bottom:12px;">
-                    <span class="project-tag">Mechanical</span>
-                    <span class="project-tag blue">Lab Work</span>
-                    <span class="project-tag" style="background:rgba(255,255,255,.15);color:#fff;">2022–25</span>
+        <!-- Unified Media Lightbox -->
+        <div id="lb" onclick="LB.outside(event)" role="dialog" aria-modal="true">
+                <span id="lb-counter"></span>
+                <span id="lb-type-badge">VIDEO</span>
+                <button id="lb-close" onclick="LB.close()" title="Close">&#x2715;</button>
+                <button class="lb-arrow" id="lb-prev" onclick="LB.step(-1)">&#8592;</button>
+                <div id="lb-media-wrap">
+                        <img id="lb-img" src="" alt="" draggable="false">
+                        <video id="lb-vid" controls autoplay playsinline></video>
                 </div>
-                <h1>Engineering Notebook</h1>
-            </div>
+                <button class="lb-arrow" id="lb-next" onclick="LB.step(1)">&#8594;</button>
+        </div>
+        <div class="page active" style="margin-top: var(--nav-h);">
+                <a class="back-btn" href="../projects.html">&#8592; Back to Projects</a>
+
+                <div class="project-detail-hero"
+                        style="background:#111;margin-top:0;position:relative;overflow:hidden;">
+                        <img src="../images/Unlisted/IMG1.jpg" alt="Engineering Notebook"
+                                style="width:100%;height:100%;object-fit:cover;opacity:.6;position:absolute;inset:0;">
+                        <div class="project-detail-hero-overlay"></div>
+                        <div class="project-detail-hero-content" style="position:relative;z-index:2;">
+                                <div class="project-tags" style="margin-bottom:12px;">
+                                        <span class="project-tag">Mechanical</span>
+                                        <span class="project-tag blue">Lab Work</span>
+                                        <span class="project-tag"
+                                                style="background:rgba(255,255,255,.15);color:#fff;">2021-2025</span>
+                                </div>
+                                <h1>Engineering Notebook</h1>
+                        </div>
+                </div>
+
+                <div class="project-detail-body">
+                        <div class="project-detail-main">
+                                <h2>Project Overview</h2>
+                                <p class="project-overview-text">This isn’t just a single project; it’s a collection of moments, each with its own
+                                        story. I’ll keep the words brief so you can dive straight into the gallery!</p>
+                                <h2 class="project-bullets-h2">What's Inside</h2></h2>
+                                <ul class="project-bullets"><li>Record of the moments that defined my engineering education and early
+                                                professional steps.</li>
+                                        <li>Celebrating a win at Engineering Night.</li>
+                                        <li>Getting my hands dirty with mechanical assembly and manufacturing.</li>
+                                        <li>Leading lab tours and demonstrating equipment to visitors.</li>
+
+                                </ul>
+                                                                <h2>Gallery</h2>
+                                                                <div class="proj-gallery">
+                                                                        <div class="gal-item" onclick="LB.open(0)"><img src="../images/Unlisted/IMG1.jpg" alt="IMG 1" loading="lazy"></div>
+                                                                        <div class="gal-item" onclick="LB.open(1)"><img src="../images/Unlisted/IMG2.jpg" alt="IMG 2" loading="lazy"></div>
+                                                                        <div class="gal-item" onclick="LB.open(2)"><img src="../images/Unlisted/IMG3.jpg" alt="IMG 3" loading="lazy"></div>
+                                                                        <div class="gal-item" onclick="LB.open(3)"><img src="../images/Unlisted/IMG4.jpg" alt="IMG 4" loading="lazy"></div>
+                                                                        <div class="gal-item" onclick="LB.open(4)"><img src="../images/Unlisted/IMG5.jpg" alt="IMG 5" loading="lazy"></div>
+                                                                        <div class="gal-item" onclick="LB.open(5)"><img src="../images/Unlisted/IMG6.jpg" alt="IMG 6" loading="lazy"></div>
+                                                                        <div class="gal-item" onclick="LB.open(6)"><img src="../images/Unlisted/IMG7.jpg" alt="IMG 7" loading="lazy"></div>
+                                                                        <div class="gal-item" onclick="LB.open(7)"><img src="../images/Unlisted/IMG8.jpg" alt="IMG 8" loading="lazy"></div>
+                                                                        <div class="gal-item" onclick="LB.open(8)"><img src="../images/Unlisted/IMG9.jpg" alt="IMG 9" loading="lazy"></div>
+                                                                        <div class="gal-item" onclick="LB.open(9)"><img src="../images/Unlisted/IMG10.jpg" alt="IMG 10" loading="lazy"></div>
+                                                                        <div class="gal-item" onclick="LB.open(10)"><img src="../images/Unlisted/IMG11.jpg" alt="IMG 11" loading="lazy"></div>
+                                                                        <div class="gal-item" onclick="LB.open(11)"><img src="../images/Unlisted/IMG12.jpg" alt="IMG 12" loading="lazy"></div>
+                                                                        <div class="gal-item" onclick="LB.open(12)"><img src="../images/Unlisted/IMG13.jpg" alt="IMG 13" loading="lazy"></div>
+                                                                        <div class="gal-item" onclick="LB.open(13)"><img src="../images/Unlisted/IMG14.jpg" alt="IMG 14" loading="lazy"></div>
+                                                                        <div class="gal-item" onclick="LB.open(14)"><img src="../images/Unlisted/IMG15.png" alt="IMG 15" loading="lazy"></div>
+                                                                        <div class="gal-item" onclick="LB.open(15)"><img src="../images/Unlisted/IMG16.jpg" alt="IMG 16" loading="lazy"></div>
+                                                                        <div class="gal-item" onclick="LB.open(16)"><img src="../images/Unlisted/IMG17.jpg" alt="IMG 17" loading="lazy"></div>
+                                                                        <div class="gal-item" onclick="LB.open(17)"><img src="../images/Unlisted/IMG18.jpg" alt="IMG 18" loading="lazy"></div>
+                                                                        <div class="gal-item" onclick="LB.open(18)"><img src="../images/Unlisted/IMG19.jpg" alt="IMG 19" loading="lazy"></div>
+                                                                        <div class="gal-item" onclick="LB.open(19)"><img src="../images/Unlisted/IMG20.jpg" alt="IMG 20" loading="lazy"></div>
+                                                                        <div class="gal-item" onclick="LB.open(20)"><img src="../images/Unlisted/IMG21.jpg" alt="IMG 21" loading="lazy"></div>
+                                                                        <div class="gal-item" onclick="LB.open(21)"><img src="../images/Unlisted/IMG22.jpg" alt="IMG 22" loading="lazy"></div>
+                                                                        <div class="gal-item" onclick="LB.open(22)"><img src="../images/Unlisted/IMG23.jpg" alt="IMG 23" loading="lazy"></div>
+                                                                        <div class="gal-item" onclick="LB.open(23)"><img src="../images/Unlisted/IMG24.jpg" alt="IMG 24" loading="lazy"></div>
+                                                                </div>
+                        </div>
+
+                        <div class="project-sidebar">
+                                <div class="sidebar-card">
+                                <h3>Project Details</h3>
+                                <div class="sidebar-info-row"><span class="sidebar-info-label">Date</span><span
+                                        class="sidebar-info-value">2021 - 2025</span></div>
+                                <div class="sidebar-info-row"><span class="sidebar-info-label">Type</span><span
+                                        class="sidebar-info-value">Mixed</span></div>
+                                </div>
+                                <div class="sidebar-card">
+                                <h3>Domains & Skills</h3>
+                                <div class="sidebar-tags">
+                                        <span class="project-tag">Mechanical</span><span class="project-tag">Electronics</span>
+                                        <span class="project-tag">Workshop</span><span class="project-tag blue">Lab</span>
+                                        <span class="project-tag">Drafting</span>
+                                </div>
+                                </div>
+                                <a class="btn-primary" href="../contact.html" style="width:100%;display:block;text-align:center;">Discuss
+                                This Project →</a>
+                        </div>
+                </div>
         </div>
 
-        <div class="project-detail-body">
-            <div class="project-detail-main">
-                <h2>Project Overview</h2>
-                <p>A curated collection of miscellaneous hands-on engineering work accumulated throughout academic and
-                    professional activities. This notebook captures the breadth of practical skills — from workshop
-                    machining and mechanical assembly to electronics lab experiments, technical drafting, and component
-                    inspection.</p>
-                <h2>What's Inside</h2>
-                <ul>
-                    <li>Mechanical component assembly and disassembly (pistons, connecting rods, gear systems).</li>
-                    <li>Hand-drafted technical engineering drawings with proper projection and dimensioning.</li>
-                    <li>Electronics breadboard experiments and circuit measurements.</li>
-                    <li>Workshop machining, part inspection, and tooling activities.</li>
-                    <li>Various lab practicals covering machine elements, materials, and manufacturing processes.</li>
-                </ul>
-                <h2>Gallery</h2>
-                <div class="unlisted-gallery" id="unlistedGallery">
-                    <div class="gal-item" onclick="LB.open(0)"><img src="../images/unlisted/IMG1.jpg" alt="IMG 1"
-                            loading="lazy"></div>
-                    <div class="gal-item" onclick="LB.open(1)"><img src="../images/unlisted/IMG2.jpg" alt="IMG 2"
-                            loading="lazy"></div>
-                    <div class="gal-item" onclick="LB.open(2)"><img src="../images/unlisted/IMG3.jpg" alt="IMG 3"
-                            loading="lazy"></div>
-                    <div class="gal-item" onclick="LB.open(3)"><img src="../images/unlisted/IMG4.jpg" alt="IMG 4"
-                            loading="lazy"></div>
-                    <div class="gal-item" onclick="LB.open(4)"><img src="../images/unlisted/IMG5.jpg" alt="IMG 5"
-                            loading="lazy"></div>
-                    <div class="gal-item" onclick="LB.open(5)"><img src="../images/unlisted/IMG6.jpg" alt="IMG 6"
-                            loading="lazy"></div>
-                    <div class="gal-item" onclick="LB.open(6)"><img src="../images/unlisted/IMG7.jpg" alt="IMG 7"
-                            loading="lazy"></div>
-                    <div class="gal-item" onclick="LB.open(7)"><img src="../images/unlisted/IMG8.jpg" alt="IMG 8"
-                            loading="lazy"></div>
-                    <div class="gal-item" onclick="LB.open(8)"><img src="../images/unlisted/IMG9.jpg" alt="IMG 9"
-                            loading="lazy"></div>
-                    <div class="gal-item" onclick="LB.open(9)"><img src="../images/unlisted/IMG10.jpg" alt="IMG 10"
-                            loading="lazy"></div>
-                    <div class="gal-item" onclick="LB.open(10)"><img src="../images/unlisted/IMG11.jpg" alt="IMG 11"
-                            loading="lazy"></div>
-                    <div class="gal-item" onclick="LB.open(11)"><img src="../images/unlisted/IMG12.jpg" alt="IMG 12"
-                            loading="lazy"></div>
-                    <div class="gal-item" onclick="LB.open(12)"><img src="../images/unlisted/IMG13.jpg" alt="IMG 13"
-                            loading="lazy"></div>
-                    <div class="gal-item" onclick="LB.open(13)"><img src="../images/unlisted/IMG14.jpg" alt="IMG 14"
-                            loading="lazy"></div>
-                    <div class="gal-item" onclick="LB.open(14)"><img src="../images/unlisted/IMG15.png" alt="IMG 15"
-                            loading="lazy"></div>
-                    <div class="gal-item" onclick="LB.open(15)"><img src="../images/unlisted/IMG16.jpg" alt="IMG 16"
-                            loading="lazy"></div>
-                    <div class="gal-item" onclick="LB.open(16)"><img src="../images/unlisted/IMG17.jpg" alt="IMG 17"
-                            loading="lazy"></div>
-                    <div class="gal-item" onclick="LB.open(17)"><img src="../images/unlisted/IMG18.jpg" alt="IMG 18"
-                            loading="lazy"></div>
-                    <div class="gal-item" onclick="LB.open(18)"><img src="../images/unlisted/IMG19.jpg" alt="IMG 19"
-                            loading="lazy"></div>
-                    <div class="gal-item" onclick="LB.open(19)"><img src="../images/unlisted/IMG20.jpg" alt="IMG 20"
-                            loading="lazy"></div>
-                    <div class="gal-item" onclick="LB.open(20)"><img src="../images/unlisted/IMG21.jpg" alt="IMG 21"
-                            loading="lazy"></div>
-                    <div class="gal-item" onclick="LB.open(21)"><img src="../images/unlisted/IMG22.jpg" alt="IMG 22"
-                            loading="lazy"></div>
-                    <div class="gal-item" onclick="LB.open(22)"><img src="../images/unlisted/IMG23.jpg" alt="IMG 23"
-                            loading="lazy"></div>
-                    <div class="gal-item" onclick="LB.open(23)"><img src="../images/unlisted/IMG24.jpg" alt="IMG 24"
-                            loading="lazy"></div>
+        <footer>
+                <p>© 2025 <strong>Bishoy Labib</strong> - Mechanical Engineer &amp; MSc Student</p>
+                <div class="footer-links">
+                        <a href="https://linkedin.com/in/bishoy-labib/" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/beshoyr100" target="_blank">GitHub</a>
+                        <a href="../resume.html">Resume</a>
+                        <a href="../contact.html">Contact</a>
                 </div>
-            </div>
+        </footer>
+    <script src="../js/i18n.js"></script>
 
-            <div class="project-sidebar">
-                <div class="sidebar-card">
-                    <h3>Project Details</h3>
-                    <div class="sidebar-info-row"><span class="sidebar-info-label">Period</span><span
-                            class="sidebar-info-value">2022–25</span></div>
-                    <div class="sidebar-info-row"><span class="sidebar-info-label">Type</span><span
-                            class="sidebar-info-value">Mixed / Practical</span></div>
-                    <div class="sidebar-info-row"><span class="sidebar-info-label">Photos</span><span
-                            class="sidebar-info-value">23 images</span></div>
-                </div>
-                <div class="sidebar-card">
-                    <h3>Domains</h3>
-                    <div class="sidebar-tags">
-                        <span class="project-tag">Mechanical</span><span class="project-tag">Electronics</span>
-                        <span class="project-tag">Workshop</span><span class="project-tag blue">Lab</span>
-                        <span class="project-tag">Drafting</span>
-                    </div>
-                </div>
-                <a class="btn-primary" href="../contact.html" style="width:100%;display:block;text-align:center;">Discuss
-                    This Project →</a>
-            </div>
-        </div>
-    </div>
-
-    <footer>
-        <p>© 2025 <strong>Bishoy Labib</strong> — Mechanical Engineer &amp; MSc Student</p>
-        <div class="footer-links">
-            <a href="https://linkedin.com/in/bishoy-labib/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/beshoyr100" target="_blank">GitHub</a>
-            <a href="../resume.html">Résumé</a>
-            <a href="../contact.html">Contact</a>
-        </div>
-    </footer>
-
-    <script src="../js/script.js"></script>
+        <script src="../js/script.js"></script>
 
 
-    <script src="../js/lightbox.js"></script>
-    <script>
-        LB.init([
-        { src:'../images/unlisted/IMG1.jpg' },
-        { src:'../images/unlisted/IMG2.jpg' },
-        { src:'../images/unlisted/IMG3.jpg' },
-        { src:'../images/unlisted/IMG4.jpg' },
-        { src:'../images/unlisted/IMG5.jpg' },
-        { src:'../images/unlisted/IMG6.jpg' },
-        { src:'../images/unlisted/IMG7.jpg' },
-        { src:'../images/unlisted/IMG8.jpg' },
-        { src:'../images/unlisted/IMG9.jpg' },
-        { src:'../images/unlisted/IMG10.jpg' },
-        { src:'../images/unlisted/IMG11.jpg' },
-        { src:'../images/unlisted/IMG12.jpg' },
-        { src:'../images/unlisted/IMG13.jpg' },
-        { src:'../images/unlisted/IMG14.jpg' },
-        { src:'../images/unlisted/IMG15.png' },
-        { src:'../images/unlisted/IMG16.jpg' },
-        { src:'../images/unlisted/IMG17.jpg' },
-        { src:'../images/unlisted/IMG18.jpg' },
-        { src:'../images/unlisted/IMG19.jpg' },
-        { src:'../images/unlisted/IMG20.jpg' },
-        { src:'../images/unlisted/IMG21.jpg' },
-        { src:'../images/unlisted/IMG22.jpg' },
-        { src:'../images/unlisted/IMG23.jpg' },
-        { src:'../images/unlisted/IMG24.jpg' }
-        ]);
-    </script>
+        <script src="../js/lightbox.js"></script>
+        <script>
+                LB.init([
+                        { src: '../images/Unlisted/IMG1.jpg' },
+                        { src: '../images/Unlisted/IMG2.jpg' },
+                        { src: '../images/Unlisted/IMG3.jpg' },
+                        { src: '../images/Unlisted/IMG4.jpg' },
+                        { src: '../images/Unlisted/IMG5.jpg' },
+                        { src: '../images/Unlisted/IMG6.jpg' },
+                        { src: '../images/Unlisted/IMG7.jpg' },
+                        { src: '../images/Unlisted/IMG8.jpg' },
+                        { src: '../images/Unlisted/IMG9.jpg' },
+                        { src: '../images/Unlisted/IMG10.jpg' },
+                        { src: '../images/Unlisted/IMG11.jpg' },
+                        { src: '../images/Unlisted/IMG12.jpg' },
+                        { src: '../images/Unlisted/IMG13.jpg' },
+                        { src: '../images/Unlisted/IMG14.jpg' },
+                        { src: '../images/Unlisted/IMG15.png' },
+                        { src: '../images/Unlisted/IMG16.jpg' },
+                        { src: '../images/Unlisted/IMG17.jpg' },
+                        { src: '../images/Unlisted/IMG18.jpg' },
+                        { src: '../images/Unlisted/IMG19.jpg' },
+                        { src: '../images/Unlisted/IMG20.jpg' },
+                        { src: '../images/Unlisted/IMG21.jpg' },
+                        { src: '../images/Unlisted/IMG22.jpg' },
+                        { src: '../images/Unlisted/IMG23.jpg' },
+                        { src: '../images/Unlisted/IMG24.jpg' }
+                ]);
+        </script>
 </body>
 
 </html>
-
-
-
-
-
-

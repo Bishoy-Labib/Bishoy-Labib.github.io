@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/lightbox.css">
 </head>
 
-<body>
+<body class="page-project" data-project-id="31412">
     <div class="cursor" id="cursor"></div>
     <div class="cursor-ring" id="cursorRing"></div>
 
@@ -27,7 +27,7 @@
             <li><a href="../resume.html">Résumé</a></li>
             <li><a href="../about.html">About</a></li>
             <li><a href="../contact.html" class="nav-cta">Contact</a></li>
-        </ul>
+        <div class="lang-switcher"><button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button><button class="lang-btn" data-lang="de" onclick="setLang('de')">DE</button></div>
     </nav>
     <!-- Unified Media Lightbox (powered by js/lightbox.js) -->
     <div id="lb" onclick="LB.outside(event)" role="dialog" aria-modal="true">
@@ -62,11 +62,9 @@
         <div class="project-detail-body">
             <div class="project-detail-main">
                 <h2>Project Overview</h2>
-                <p>At ZALNER Engineering, led the programming and lifecycle management of advanced measurement systems
-                    including robotic CMMs, VMMs, and 3D optical scanning for high-precision quality assurance.</p>
-                <h2>Key Contributions</h2>
-                <ul>
-                    <li>Programmed robotic arms, VMMs, CMMs, and 3D optical scanning systems using ZEISS Inspect, GOM
+                <p class="project-overview-text">Will be Finalized Soon!</p>
+                <h2 class="project-bullets-h2">Key Contributions</h2></h2>
+                <ul class="project-bullets"><li>Programmed robotic arms, VMMs, CMMs, and 3D optical scanning systems using ZEISS Inspect, GOM
                         Inspect, and PolyWorks.</li>
                     <li>Managed full lifecycle of point cloud and mesh processing for high-precision inspection and
                         reverse engineering workflows.</li>
@@ -112,25 +110,19 @@
             <div class="project-sidebar">
                 <div class="sidebar-card">
                     <h3>Project Details</h3>
-                    <div class="sidebar-info-row"><span class="sidebar-info-label">Year</span><span
-                            class="sidebar-info-value">2024–25</span></div>
-                    <div class="sidebar-info-row"><span class="sidebar-info-label">Company</span><span
-                            class="sidebar-info-value">ZALNER Engineering</span></div>
-                    <div class="sidebar-info-row"><span class="sidebar-info-label">Domain</span><span
-                            class="sidebar-info-value">Metrology / QA</span></div>
-                    <div class="sidebar-info-row"><span class="sidebar-info-label">Photos</span><span
-                            class="sidebar-info-value">15 images</span></div>
+                        <div class="sidebar-info-row"><span class="sidebar-info-label">Date</span><span
+                                        class="sidebar-info-value">-</span></div>
+                        <div class="sidebar-info-row"><span class="sidebar-info-label">Type</span><span
+                                        class="sidebar-info-value">Practical Experience</span></div>
                 </div>
                 <div class="sidebar-card">
-                    <h3>Tech Stack</h3>
-                    <div class="sidebar-tags">
-                        <span class="project-tag">ZEISS Inspect</span><span class="project-tag">GOM</span>
-                        <span class="project-tag">PolyWorks</span><span class="project-tag blue">DMIS</span>
-                        <span class="project-tag">3D Scanning</span>
-                    </div>
+                    <h3>Domains & Skills</h3>
+                        <div class="sidebar-tags">
+                            <span class="project-tag">Coming Soon</span>
+                        </div>
                 </div>
-                <a class="btn-primary" href="../contact.html"
-                    style="width:100%;display:block;text-align:center;">Discuss This Project →</a>
+                <a class="btn-primary" href="../contact.html" style="width:100%;display:block;text-align:center;">Discuss
+                                This Project →</a>
             </div>
         </div>
     </div>
@@ -144,6 +136,7 @@
             <a href="../contact.html">Contact</a>
         </div>
     </footer>
+    <script src="../js/i18n.js"></script>
 
     <script src="../js/script.js"></script>
     <script src="../js/lightbox.js"></script>

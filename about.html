@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page-about">
 
     <div class="cursor" id="cursor"></div>
     <div class="cursor-ring" id="cursorRing"></div>
@@ -20,26 +20,26 @@
     <nav>
         <a class="nav-logo" href="index.html">BL<span>.</span></a>
         <ul class="nav-links">
-            <li><a href="index.html" id="nav-home">Home</a></li>
-            <li><a href="projects.html" id="nav-projects">Projects</a></li>
-            <li><a href="experience.html" id="nav-experience">Edu &amp; Experience</a></li>
-            <li><a href="resume.html" id="nav-resume">Résumé</a></li>
-            <li><a href="about.html" id="nav-about">About</a></li>
-            <li><a href="contact.html" id="nav-contact" class="nav-cta">Contact</a></li>
-        </ul>
+            <li><a href="index.html" id="nav-home" data-i18n="nav.home">Home</a></li>
+            <li><a href="projects.html" id="nav-projects" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="experience.html" id="nav-experience" data-i18n="nav.experience">Edu &amp; Experience</a></li>
+            <li><a href="resume.html" id="nav-resume" data-i18n="nav.resume">Résumé</a></li>
+            <li><a href="about.html" id="nav-about" data-i18n="nav.about">About</a></li>
+            <li><a href="contact.html" id="nav-contact" class="nav-cta" data-i18n="nav.contact">Contact</a></li>
+        <div class="lang-switcher"><button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button><button class="lang-btn" data-lang="de" onclick="setLang('de')">DE</button></div>
     </nav>
 
     <!-- About Hero -->
     <div class="about-hero">
         <div>
-            <h2>Engineer.<br><em>Thinker.</em><br>Builder.</h2>
-            <p>I'm Bishoy — a multidisciplinary engineer driven by genuine curiosity for how things work and how they
+            <h2 data-i18n="about_page.heroTitle">Engineer.<br><em>Thinker.</em><br>Builder.</h2>
+            <p data-i18n="about_page.heroP1">I'm Bishoy — a multidisciplinary engineer driven by genuine curiosity for how things work and how they
                 can be made better. I thrive at the intersection of mechanical precision, computational methods, and
                 modern automation.</p>
-            <p>Currently pursuing my MSc in Interdisciplinary Computing (Future Industries) at IT-U Austria in Linz,
+            <p data-i18n="about_page.heroP2">Currently pursuing my MSc in Interdisciplinary Computing (Future Industries) at IT-U Austria in Linz,
                 after completing my BSc in Mechanical Engineering at ELTE Hungary with a GPA of 4.61/5.0 and a Faculty
                 Outstanding Student Award.</p>
-            <p>My goal: to combine technical depth with a proactive, adaptable mindset — delivering sustainable,
+            <p data-i18n="about_page.heroP3">My goal: to combine technical depth with a proactive, adaptable mindset — delivering sustainable,
                 digitalized engineering solutions for high-tech industries.</p>
         </div>
         <div class="about-right">
@@ -128,6 +128,7 @@
             <a href="contact.html">Contact</a>
         </div>
     </footer>
+    <script src="js/i18n.js"></script>
 
     <script src="js/script.js"></script>
 </body>

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/lightbox.css">
 </head>
 
-<body>
+<body class="page-project" data-project-id="31412">
     <div class="cursor" id="cursor"></div>
     <div class="cursor-ring" id="cursorRing"></div>
     <nav>
@@ -24,7 +24,7 @@
             <li><a href="../resume.html">Résumé</a></li>
             <li><a href="../about.html">About</a></li>
             <li><a href="../contact.html" class="nav-cta">Contact</a></li>
-        </ul>
+        <div class="lang-switcher"><button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button><button class="lang-btn" data-lang="de" onclick="setLang('de')">DE</button></div>
     </nav>
 
     <div class="page active" style="margin-top:var(--nav-h);">
@@ -44,11 +44,10 @@
         <div class="project-detail-body">
             <div class="project-detail-main">
                 <h2>Project Overview</h2>
-                <p>Developed a custom slicing engine using Python and Perl to enable non-linear, 5-axis toolpaths for
+                <p class="project-overview-text">Developed a custom slicing engine using Python and Perl to enable non-linear, 5-axis toolpaths for
                     additive manufacturing — moving beyond the constraints of conventional 3-axis FDM printing.</p>
-                <h2>Key Contributions</h2>
-                <ul>
-                    <li>Developed custom slicing logic for non-linear 5-axis toolpaths, expanding beyond traditional
+                <h2 class="project-bullets-h2">Key Contributions</h2></h2>
+                <ul class="project-bullets"><li>Developed custom slicing logic for non-linear 5-axis toolpaths, expanding beyond traditional
                         planar layer approaches.</li>
                     <li>Created a sub-slicing method that dynamically adjusts print parameters locally for complex
                         geometry sections.</li>
@@ -68,27 +67,23 @@
                 </div>
             </div>
             <div class="project-sidebar">
-                <div class="sidebar-card">
-                    <h3>Project Details</h3>
-                    <div class="sidebar-info-row"><span class="sidebar-info-label">Year</span><span
-                            class="sidebar-info-value">2024</span></div>
-                    <div class="sidebar-info-row"><span class="sidebar-info-label">Type</span><span
-                            class="sidebar-info-value">Software / Manufacturing</span></div>
-                    <div class="sidebar-info-row"><span class="sidebar-info-label">Domain</span><span
-                            class="sidebar-info-value">Additive Manufacturing</span></div>
-                    <div class="sidebar-info-row"><span class="sidebar-info-label">Status</span><span
-                            class="sidebar-info-value">Completed</span></div>
-                </div>
-                <div class="sidebar-card">
-                    <h3>Tech Stack</h3>
-                    <div class="sidebar-tags">
-                        <span class="project-tag blue">Python</span><span class="project-tag blue">Perl</span>
-                        <span class="project-tag">G-Code</span><span class="project-tag">FDM</span>
-                        <span class="project-tag">CAM</span>
-                    </div>
-                </div>
-                <a class="btn-primary" href="../contact.html"
-                    style="width:100%;display:block;text-align:center;">Discuss This Project →</a>
+                                <div class="sidebar-card">
+                                <h3>Project Details</h3>
+                                <div class="sidebar-info-row"><span class="sidebar-info-label">Date</span><span
+                                        class="sidebar-info-value">2021 - 2025</span></div>
+                                <div class="sidebar-info-row"><span class="sidebar-info-label">Type</span><span
+                                        class="sidebar-info-value">Mixed</span></div>
+                                </div>
+                                <div class="sidebar-card">
+                                <h3>Domains & Skills</h3>
+                                <div class="sidebar-tags">
+                                        <span class="project-tag">Mechanical</span><span class="project-tag">Electronics</span>
+                                        <span class="project-tag">Workshop</span><span class="project-tag blue">Lab</span>
+                                        <span class="project-tag">Drafting</span>
+                                </div>
+                                </div>
+                                <a class="btn-primary" href="../contact.html" style="width:100%;display:block;text-align:center;">Discuss
+                                This Project →</a>
             </div>
         </div>
     </div>
@@ -102,6 +97,7 @@
             <a href="../contact.html">Contact</a>
         </div>
     </footer>
+    <script src="../js/i18n.js"></script>
     <script src="../js/script.js"></script>
 </body>
 

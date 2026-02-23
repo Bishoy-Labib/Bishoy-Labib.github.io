@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page-contact">
 
     <div class="cursor" id="cursor"></div>
     <div class="cursor-ring" id="cursorRing"></div>
@@ -21,36 +21,39 @@
     <nav>
         <a class="nav-logo" href="index.html">BL<span>.</span></a>
         <ul class="nav-links">
-            <li><a href="index.html" id="nav-home">Home</a></li>
-            <li><a href="projects.html" id="nav-projects">Projects</a></li>
-            <li><a href="experience.html" id="nav-experience">Edu &amp; Experience</a></li>
-            <li><a href="resume.html" id="nav-resume">Résumé</a></li>
-            <li><a href="about.html" id="nav-about">About</a></li>
-            <li><a href="contact.html" id="nav-contact" class="nav-cta">Contact</a></li>
-        </ul>
+            <li><a href="index.html" id="nav-home" data-i18n="nav.home">Home</a></li>
+            <li><a href="projects.html" id="nav-projects" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="experience.html" id="nav-experience" data-i18n="nav.experience">Edu &amp; Experience</a></li>
+
+            <li><a href="contact.html" id="nav-contact" class="nav-cta" data-i18n="nav.contact">Contact</a></li>
+        <div class="lang-switcher"><button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button><button class="lang-btn" data-lang="de" onclick="setLang('de')">DE</button></div>
     </nav>
 
     <div class="contact-layout">
         <div class="contact-form-card">
-            <h3>Send a Message</h3>
-            <p>Have a project, opportunity, or question? Fill out the form and I'll get back to you within 24 hours.</p>
-            <div class="form-group">
-                <label class="form-label">Full Name</label>
-                <input class="form-input" type="text" placeholder="Your name">
-            </div>
-            <div class="form-group">
-                <label class="form-label">Email</label>
-                <input class="form-input" type="email" placeholder="your@email.com">
-            </div>
-            <div class="form-group">
-                <label class="form-label">Subject</label>
-                <input class="form-input" type="text" placeholder="What's this about?">
-            </div>
-            <div class="form-group">
-                <label class="form-label">Message</label>
-                <textarea class="form-textarea" placeholder="Tell me about your project or opportunity..."></textarea>
-            </div>
-            <button class="btn-primary" style="width:100%;margin-top:8px;">Send Message →</button>
+            <h3 data-i18n="contact_page.formTitle">Send a Message</h3>
+            <p data-i18n="contact_page.formDesc">Have a project, opportunity, or question? Fill out the form and I'll get back to you within 24 hours.</p>
+            <form action="https://formspree.io/f/xojnkewg" method="POST">
+                <input type="hidden" name="_subject" value="New message from portfolio contact form">
+                <div class="form-group">
+                    <label class="form-label" data-i18n="contact_page.labelName">Full Name</label>
+                    <input class="form-input" type="text" name="name" data-i18n-placeholder="contact_page.placeholderName" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" data-i18n="contact_page.labelEmail">Email</label>
+                    <input class="form-input" type="email" name="email" data-i18n-placeholder="contact_page.placeholderEmail" placeholder="your@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" data-i18n="contact_page.labelSubject">Subject</label>
+                    <input class="form-input" type="text" name="subject" data-i18n-placeholder="contact_page.placeholderSubject" placeholder="What's this about?" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" data-i18n="contact_page.labelMessage">Message</label>
+                    <textarea class="form-textarea" name="message"
+                        data-i18n-placeholder="contact_page.placeholderMessage" placeholder="Tell me about your project or opportunity..." required></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width:100%;margin-top:8px;" data-i18n="contact_page.sendBtn">Send Message →</button>
+            </form>
         </div>
 
         <div class="contact-right">
@@ -59,11 +62,11 @@
                 <p class="contact-sub">Based in Linz, Austria. Open to opportunities in engineering, research, and
                     high-tech industries worldwide.</p>
             </div>
-            <a class="contact-link-row" href="mailto:bishoy.labib100@gmail.com">
+            <a class="contact-link-row" href="mailto:Labib.Bishoy@outlook.com">
                 <div class="contact-link-icon">✉️</div>
                 <div>
                     <div class="contact-link-label">Email</div>
-                    <div class="contact-link-value">bishoy.labib100@gmail.com</div>
+                    <div class="contact-link-value">Labib.Bishoy@outlook.com</div>
                 </div>
             </a>
             <a class="contact-link-row" href="tel:+436766610960">
@@ -87,13 +90,6 @@
                     <div class="contact-link-value">github.com/beshoyr100</div>
                 </div>
             </a>
-            <a class="contact-link-row" href="https://bishoy-labib.github.io/" target="_blank">
-                <div class="contact-link-icon">🌐</div>
-                <div>
-                    <div class="contact-link-label">Portfolio Website</div>
-                    <div class="contact-link-value">bishoy-labib.github.io</div>
-                </div>
-            </a>
         </div>
     </div>
 
@@ -106,6 +102,7 @@
             <a href="contact.html">Contact</a>
         </div>
     </footer>
+    <script src="js/i18n.js"></script>
 
     <script src="js/script.js"></script>
 </body>
