@@ -195,9 +195,9 @@
       "id": "p1",
       "file": "project-p1.html",
       "title": "Digital Twin & Robotics Integration (Industry 5.0)",
-      "date": "2024",
+      "date": "2026",
       "sidebar": {
-        "period": "2024",
+        "period": "2026",
         "type": "Research / Digital Twin",
         "domains": ["Robotics", "ROS2", "Digital Twin"]
       },
